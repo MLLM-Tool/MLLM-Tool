@@ -6,11 +6,10 @@
 
 -----
 
-<a href='https://next-gpt.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 <a href='#'><img src='https://img.shields.io/badge/Demo-Page-purple'></a> 
 <a href='https://arxiv.org/pdf/2309.05519'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 
-This repository hosts the code, data and model weight of **Tool_LMM**, the first end-to-end MM-LLM that perceives input and generates output in arbitrary combinations (any-to-any) of text, image, video, and audio and beyond.
+This repository hosts the code, data and model weight of **Tool_LMM**, the first end-to-end tool agent LMM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
 
 
 -----------
@@ -25,6 +24,7 @@ This repository hosts the code, data and model weight of **Tool_LMM**, the first
 - [ ] Collect more data and release v2 dataset.
 - [ ] Update Tool_LMM in more types&sizes of LLMs.
 - [ ] Empower Tool_LMM with retrieving open-set tools.
+- [ ] Release Demo and Interactive Website
 - [ ] ...
 
 
@@ -44,7 +44,7 @@ NExt-GPT is built on top of existing pre-trained LLM, multimodal encoder and SoT
 - **LLM Understanding and Reasoning Stage.** Harnessing an existing open-sourced LLM as the core to process input information for semantic understanding and reasoning. The LLM not only directly generates text tokens but also produces unique “modality signal” tokens that serve as instructions to dictate the decoding layers whether & what modal content to output correspondingly.
 - **Multimodal Generation Stage.** Receiving the multimodal signals with specific instructions from LLM (if any), the Transformer-based output projection layers map the signal token representations into the ones that are understandable to following multimodal decoders.
 
-For more technical details, kindly refer to the [paper](https://arxiv.org/pdf/2309.05519.pdf). 
+For more technical details, kindly refer to the [paper]. 
 
 -----------
 
@@ -138,7 +138,7 @@ conda activate toollmm
 # CUDA 11.7
 pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu117
 
-git clone https://github.com/NExT-GPT/NExT-GPT.git
+git clone https://github.com/Tool-LMM/Tool-LMM.git
 cd toollmm
 
 pip install -r requirements.txt *
@@ -206,8 +206,8 @@ Specifying the command:
 deepspeed --include localhost:0 --master_addr 127.0.0.1 --master_port 28459 train.py \
     --model nextgpt \
     --stage 1\
-    --save_path  ../ckpt/delta_ckpt/nextgpt/7b_tiva_v0/\
-    --log_path ../ckpt/delta_ckpt/nextgpt/7b_tiva_v0/log/
+    --save_path  ../ckpt/delta_ckpt/tool_lmm/7b_tiva_v0/\
+    --log_path ../ckpt/delta_ckpt/tool_lmm/7b_tiva_v0/log/
 ```
 where the key arguments are:
 - `--include`: `localhost:0` indicating the GPT cuda number `0` of deepspeed.
@@ -217,59 +217,30 @@ where the key arguments are:
 
 
 
+The whole Tool_LMM training involves:
+
+- **Step-1**: Instruction Tuning. This stage instruction-tune 1) the ***LLM*** via LoRA, 2) ***input projection layer*** on the Tool_MMBench dataset.
+
+  Just run the above `train.sh` script.
+
+  Also refer to the running config file [[./code/config/openllama_peft.yaml]](./code/config/openllama_peft.yaml) and deepspeed config file [[./code/dsconfig/openllama_peft_stage_1.yaml]](./code/dsconfig/openllama_peft_stage_1.yaml) for detailed configurations.
 
 
-The whole Tool_LMM training involves 3 steps:
+<span id='Run Tool_LMM System'/>
 
-- **Step-1**: Encoding-side LLM-centric Multimodal Alignment. This stage trains the ***input projection layer*** while freezing the ImageBind, LLM, output projection layer.
-  
-  Just run the above `train.sh` script by setting: `--stage 1`
-  
-  Also refer to the running config file [[./code/config/stage_1.yaml]](./code/config/stage_1.yaml) and deepspeed config file [[./code/dsconfig/stage_1.yaml]](./code/dsconfig/stage_1.yaml) for more step-wise configurations.
-
-  Note that the dataset used for training in this step is included `dataset_name_list` and the dataset name must precisely match the definition in [[./code/dataset/catalog.py]](./code/dataset/catalog.py)  
-
-
-- **Step-2**: Decoding-side Instruction-following Alignment. This stage trains the ***output projection layers*** while freezing the ImageBind, LLM, input projection layers.
-
-  Just run the above `train.sh` script by setting: `--stage 2`
-
-  Also refer to the running config file [[./code/config/stage_2.yaml]](./code/config/stage_2.yaml) and deepspeed config file [[./code/dsconfig/stage_2.yaml]](./code/dsconfig/stage_2.yaml) for more step-wise configurations.
-
-
-
-
-- **Step-3**: Instruction Tuning. This stage instruction-tune 1) the ***LLM*** via LoRA, 2) ***input projection layer*** and 3) ***output projection layer*** on the instruction dataset.
-
-  Just run the above `train.sh` script by setting: `--stage 3`
-
-  Also refer to the running config file [[./code/config/stage_3.yaml]](./code/config/stage_3.yaml) and deepspeed config file [[./code/dsconfig/stage_3.yaml]](./code/dsconfig/stage_3.yaml) for more step-wise configurations.
-
-
-
-<span id='Run NExT-GPT System'/>
-
-## 4. Training your own TOOLLMM system<a href='#all_catelogue'>[Back to Top]</a>
+## 4. Training your own Tool_LMM system<a href='#all_catelogue'>[Back to Top]</a>
 
 <span id='Prepare checkpoints'/>
 
 #### 4.1. Preparing Checkpoints
 
-First, loading the pre-trained NExT-GPT system.
+First, loading the pre-trained Tool_LMM system.
 - **Step-1**: load `Frozen parameters`. Please refer to <a href='#Prepare Pre-trained Checkpoint'>3.1 Preparing Pre-trained Checkpoint</a>.
 
 - **Step-2**: load `Tunable parameters`. Please put the NExT-GPT system at [[./ckpt/delta_ckpt/nextgpt/7b_tiva_v0]](./ckpt/delta_ckpt/nextgpt/7b_tiva_v0). You may either 1) use the params trained yourselves, or 2) download our checkpoints from [Huggingface](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0). 
 
 <span id='Deploy Demo System'/>
 
-#### 4.2. Deploying Gradio Demo
-Upon completion of the checkpoint loading, you can run the demo locally via:
-```angular2html
-cd ./code
-bash scripts/app.sh
-```
-Specifying the key arguments as:
-- `--nextgpt_ckpt_path`: the path of pre-trained NExT-GPT params.
 
 ---------
 
@@ -279,15 +250,9 @@ For any questions or feedback, feel free to contact [Chenyu Wang](wangchy8@shang
 
 ## Citation
 
-If you find NextGPT useful in your research or applications, please kindly cite:
+ If you find Tool_LMM useful in your research or applications, please kindly cite:
 ```
-@articles{wang2024,
-  title={NExT-GPT: Any-to-Any Multimodal LLM},
-  author={Shengqiong Wu and Hao Fei and Leigang Qu and Wei Ji and Tat-Seng Chua},
-  journal = {CoRR},
-  volume = {abs/2309.05519},
-  year={2023}
-}
+
 ```
 
 
@@ -296,17 +261,16 @@ If you find NextGPT useful in your research or applications, please kindly cite:
 ## Acknowledgements
 You may refer to related work that serves as foundations for our framework and code repository, 
 [Vicuna](https://github.com/lm-sys/FastChat), 
+[Llama]
+[Llama2]
+[Llama2-Chat]
 [ImageBind](https://github.com/facebookresearch/ImageBind), 
-[Stable Diffusion](https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/text2img), 
-[AudioLDM](https://github.com/haoheliu/AudioLDM), and
-[Zeroscope](https://huggingface.co/cerspense/zeroscope_v2_576w).
 We also partially draw inspirations from 
 [PandaGPT](https://github.com/yxuansu/PandaGPT), 
-[VPGTrans](https://vpgtrans.github.io/), 
-[GILL](https://github.com/kohjingyu/gill/), 
 [CoDi](https://codi-gen.github.io/),
-[Video-LLaMA](https://github.com/DAMO-NLP-SG/Video-LLaMA),
-and [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4).
+[MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4),
+[LlaVA],
+[NeXT-GPT].
 Thanks for their wonderful works.
 
 
