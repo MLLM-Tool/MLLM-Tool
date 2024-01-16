@@ -64,7 +64,8 @@ For more technical details, kindly refer to the [paper].
   * <a href='#Train Tool_LMM'>3.3. Training Tool_LMM</a>
 * <a href='#Run Tool_LMM System'>4. Running Tool_LMM System</a>
   * <a href='#Prepare checkpoints'>4.1. Preparing checkpoints</a>
-  * <a href='#Deploy Demo System'>4.2. Deploying Demo System</a>
+  * <a href='#Inference'>4.2. Inference</a>
+  * <a href='#Evaluation on the inference prediction'>4.3. Evaluation on the inference prediction</a>
 
 ****
 
