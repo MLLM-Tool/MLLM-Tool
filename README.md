@@ -114,7 +114,7 @@ For more technical details, kindly refer to the [paper].
 │   ├── imagebind_ckpt
 │   │   ├──huge                               # version
 │   │   │   └──imagebind_huge.pth
-│   ├── llm_ckpt
+│   ├── LLM_ckpt
 │   │   ├── vicuna_7b
 │   │   │   ├── config.json
 │   │   │   ├── pytorch_model-00001-of-00002.bin
@@ -207,7 +207,7 @@ deepspeed --include localhost:0,1,2,3 --master_addr 127.0.0.1 --master_port 2845
     --model openllama_peft \
     --stage 1\
     --imagebind_ckpt_path ../pretrained_checkpoint/imagebind_ckpt/\
-    --llm_ckpt_path ../pretrained_checkpoint/llm_ckpt/vicuna_7b/\
+    --llm_ckpt_path ../pretrained_checkpoint/LLM_ckpt/vicuna_7b/\
     --max_tgt_len 1024\
     --save_path  ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/\
     --log_path ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/log/
