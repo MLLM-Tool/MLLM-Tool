@@ -16,7 +16,7 @@ This repository hosts the code, data and model weight of **Tool_LMM**, the first
 
 ## 🎉 News 
 
-- [x] [2024.01.16] 🚀🚀 Release the code of Tool_LMM in version `7b_tiva_v0`.
+- [x] [2024.01.16] 🚀🚀 Release the code of Tool_LMM.
 - [x] [2024.01.16] 🔨🧩 Release the Tool_MMBench dataset.
 - [x] [2024.01.16] 📢📢 Release the checkpoint of Tool_LMM in Vicuna-7B, Vicuna-13B, Llama-7B, Llama-13B, Llama2-7B, Llama2-13B, Llama2Chat-7B, Llama2Chat-13B.
 
@@ -108,7 +108,7 @@ For more technical details, kindly refer to the [paper].
 │   │   └── train.sh                          # training Tool_LMM script
 │   ├── header.py
 │   ├── process_embeddings.py                 # precompute the captions embeddings
-│   ├── train.py                              # training
+│   ├── train_sft.py                              # training
 │   └── inference.py                          # inference
 ├── pretrained_checkpoint                     # frozen params of pretrained modules
 │   ├── imagebind_ckpt
@@ -203,15 +203,21 @@ bash scripts/train.sh
 ```
 Specifying the command:
 ```angular2html
-deepspeed --include localhost:0 --master_addr 127.0.0.1 --master_port 28459 train.py \
-    --model nextgpt \
+deepspeed --include localhost:0,1,2,3 --master_addr 127.0.0.1 --master_port 28459 train_sft.py \
+    --model openllama_peft \
     --stage 1\
+    --imagebind_ckpt_path ../pretrained_checkpoint/imagebind_ckpt/\
+    --llm_ckpt_path ../pretrained_checkpoint/vicuna_ckpt/7b_v0/\
+    --max_tgt_len 1024\
     --save_path  ../ckpt/delta_ckpt/tool_lmm/7b_tiva_v0/\
     --log_path ../ckpt/delta_ckpt/tool_lmm/7b_tiva_v0/log/
 ```
 where the key arguments are:
 - `--include`: `localhost:0` indicating the GPT cuda number `0` of deepspeed.
 - `--stage`: training stage.
+- `--imagebind_ckpt_path`: the directory which saves the pretrained imagebind weights.
+- `--llm_ckpt_path`: the directory which saves the pretrained large language model weights.
+- `--max_tgt_len`: the maximum target length.
 - `--save_path`: the directory which saves the trained delta weights. This directory will be automatically created.
 - `--log_path`: the directory which saves the log file.
 
@@ -261,16 +267,16 @@ For any questions or feedback, feel free to contact [Chenyu Wang](wangchy8@shang
 ## Acknowledgements
 You may refer to related work that serves as foundations for our framework and code repository, 
 [Vicuna](https://github.com/lm-sys/FastChat), 
-[Llama]
-[Llama2]
-[Llama2-Chat]
+[Llama](https://github.com/facebookresearch/llama),
+[Llama2](https://github.com/facebookresearch/llama),
+[Llama2-Chat](https://github.com/facebookresearch/llama),
 [ImageBind](https://github.com/facebookresearch/ImageBind), 
 We also partially draw inspirations from 
 [PandaGPT](https://github.com/yxuansu/PandaGPT), 
 [CoDi](https://codi-gen.github.io/),
 [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4),
-[LlaVA],
-[NeXT-GPT].
+[LLaVA](https://github.com/haotian-liu/LLaVA),
+[NeXT-GPT](https://github.com/NExT-GPT/NExT-GPT).
 Thanks for their wonderful works.
 
 
