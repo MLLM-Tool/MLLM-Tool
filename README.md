@@ -18,10 +18,8 @@ This repository hosts the code, data and model weight of **Tool_LMM**, the first
 ## 🎉 News 
 
 - [x] [2024.01.16] 🚀🚀 Release the code of Tool_LMM in version `7b_tiva_v0`.
-- [√] [2024.01.16] 🔨🧩 Release.
-- [x] [2024.01.16] 📢📢 Release the T2M instruction dataset.
-- [x] [2024.01.16] 👏👏 Release the checkpoint of NExT-GPT in version [7b_tiva_v0](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0) .
-- [x] [2023.10.15] 🔨🚀 Update of NExT-GPT in version [7b_tiva_v0](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0) .
+- [x] [2024.01.16] 🔨🧩 Release the Tool_MMBench dataset.
+- [x] [2024.01.16] 📢📢 Release the checkpoint of Tool_LMM in Vicuna-7B, Vicuna-13B, Llama-7B, Llama-13B, Llama2-7B, Llama2-13B, Llama2Chat-7B, Llama2Chat-13B.
 
 ## 👉 TODO 
 - [ ] Collect more data and release v2 dataset.
