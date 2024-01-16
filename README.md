@@ -17,16 +17,16 @@ This repository hosts the code, data and model weight of **Tool_LMM**, the first
 
 ## 🎉 News 
 
-- [x] [2024.01.16] 🚀🚀 Release the code of NExT-GPT in version `7b_tiva_v0`.
-- [x] [2024.01.16] 🔨🧩 Added modality-blended batch sampler .
+- [x] [2024.01.16] 🚀🚀 Release the code of Tool_LMM in version `7b_tiva_v0`.
+- [√] [2024.01.16] 🔨🧩 Release.
 - [x] [2024.01.16] 📢📢 Release the T2M instruction dataset.
 - [x] [2024.01.16] 👏👏 Release the checkpoint of NExT-GPT in version [7b_tiva_v0](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0) .
 - [x] [2023.10.15] 🔨🚀 Update of NExT-GPT in version [7b_tiva_v0](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0) .
 
 ## 👉 TODO 
 - [ ] Collect more data and release v2 dataset.
-- [ ] Updating Tool_LMM in more types&sizes of LLMs.
-- [ ] Empowering Tool_LMM with retrieving open-set tools.
+- [ ] Update Tool_LMM in more types&sizes of LLMs.
+- [ ] Empower Tool_LMM with retrieving open-set tools.
 - [ ] ...
 
 
