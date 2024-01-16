@@ -1,6 +1,6 @@
 # Tool_LMM:A Large Multi-Modal Model for Tool Learning
-[Chenyu Wang], [Weixin Luo], [Lin Ma], [Shenghua Gao](*).
-(*Correspondence )
+[Chenyu Wang], [Weixin Luo], [Lin Ma], [Shenghua Gao].
+
 
 **Tool_LMM, School of Information Science and Technology, ShanghaiTech University**
 
