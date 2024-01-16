@@ -6,7 +6,6 @@
 
 -----
 
-<a href='#'><img src='https://img.shields.io/badge/Demo-Page-purple'></a> 
 <a href='https://arxiv.org/pdf/2309.05519'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
 
 This repository hosts the code, data and model weight of **Tool_LMM**, the first end-to-end tool agent LMM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
@@ -24,27 +23,9 @@ This repository hosts the code, data and model weight of **Tool_LMM**, the first
 - [ ] Collect more data and release v2 dataset.
 - [ ] Update Tool_LMM in more types&sizes of LLMs.
 - [ ] Empower Tool_LMM with retrieving open-set tools.
-- [ ] Release Demo and Interactive Website
+- [ ] Release Demo and Interactive Website.
 - [ ] ...
 
-
------------
-
-<span id='introduction'/>
-
-## Brief Introduction 
-
-NExt-GPT is built on top of existing pre-trained LLM, multimodal encoder and SoTA diffusion models, with sufficient end-to-end instruction tuning.
-
-<p align="center" width="100%">
-<a target="_blank"><img src="figures/framework.png" alt="Video-LLaMA" style="width: 90%; min-width: 200px; display: block; margin: auto;"></a>
-</p>
-
-- **Multimodal Encoding Stage.** Leveraging established encoders to encode inputs in various modalities, where these representations are projected into language-like representations comprehensible to the LLM through a projection layer.
-- **LLM Understanding and Reasoning Stage.** Harnessing an existing open-sourced LLM as the core to process input information for semantic understanding and reasoning. The LLM not only directly generates text tokens but also produces unique “modality signal” tokens that serve as instructions to dictate the decoding layers whether & what modal content to output correspondingly.
-- **Multimodal Generation Stage.** Receiving the multimodal signals with specific instructions from LLM (if any), the Transformer-based output projection layers map the signal token representations into the ones that are understandable to following multimodal decoders.
-
-For more technical details, kindly refer to the [paper]. 
 
 -----------
 
@@ -65,7 +46,6 @@ For more technical details, kindly refer to the [paper].
 * <a href='#Run Tool_LMM System'>4. Running Tool_LMM System</a>
   * <a href='#Prepare checkpoints'>4.1. Preparing checkpoints</a>
   * <a href='#Inference'>4.2. Inference</a>
-  * <a href='#Evaluation on the inference prediction'>4.3. Evaluation on the inference prediction</a>
 
 ****
 
@@ -180,17 +160,10 @@ first prepare the LLaMA by following the instructions [[here]](ckpt/pretrained_c
 <span id='Prepare Dataset'/>
 
 #### 3.2. Preparing Dataset  <a href='#all_catelogue'>[Back to Top]</a>
-Please download the following datasets used for model training:
-
-We divide the training set according to the different modality combination of the input instruction, and you can download from 
-
-For the testing set, you can also download from 
+Please download the following datasets used for model training and testing from [here](https://drive.google.com/drive/folders/1xd8y4gzWIXGS3zHCv-AEIBT2taDUOZAp?usp=drive_link):
 
 After downloading the dataset, please put it under the path [data/IT_data_ins/T+X-T_data/]
     
-    Side note：After downloading dataset, please run `preprocess_dataset.py` to preprocess the dataset into a unified format.
-
-
 <span id='Train Tool_LMM'/>
 
 #### 3.3. Training Tool_LMM  <a href='#all_catelogue'>[Back to Top]</a>
@@ -261,9 +234,6 @@ The prediction output would save in the format of JSON under the path [data/infe
    "response": output,
 ```
 
-<span id=' Evaluate on the inference prediction'/>
-
-#### 4.3. Evaluate on the inference prediction<a href='#all_catelogue'>[Back to Top]</a>
 ---------
 
 ## Contact
@@ -289,7 +259,6 @@ You may refer to related work that serves as foundations for our framework and c
 [ImageBind](https://github.com/facebookresearch/ImageBind), 
 We also partially draw inspirations from 
 [PandaGPT](https://github.com/yxuansu/PandaGPT), 
-[CoDi](https://codi-gen.github.io/),
 [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4),
 [LLaVA](https://github.com/haotian-liu/LLaVA),
 [NeXT-GPT](https://github.com/NExT-GPT/NExT-GPT).
