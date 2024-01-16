@@ -234,20 +234,22 @@ The whole Tool_LMM training involves:
 
 <span id='Run Tool_LMM System'/>
 
-## 4. Training your own Tool_LMM system<a href='#all_catelogue'>[Back to Top]</a>
+## 4. Evaluating your own Tool_LMM system
 
 <span id='Prepare checkpoints'/>
 
-#### 4.1. Preparing Checkpoints
+#### 4.1. Preparing Checkpoints<a href='#all_catelogue'>[Back to Top]</a>
 
-First, loading the pre-trained Tool_LMM system.
+You can either 1) use the params trained yourselves, or 2) download our checkpoints from the following links.
 - **Step-1**: load `Frozen parameters`. Please refer to <a href='#Prepare Pre-trained Checkpoint'>3.1 Preparing Pre-trained Checkpoint</a>.
 
 - **Step-2**: load `Tunable parameters`. Please put the NExT-GPT system at [[./ckpt/delta_ckpt/nextgpt/7b_tiva_v0]](./ckpt/delta_ckpt/nextgpt/7b_tiva_v0). You may either 1) use the params trained yourselves, or 2) download our checkpoints from [Huggingface](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0). 
 
 <span id='Deploy Demo System'/>
 
+#### 4.2. Inference <a href='#all_catelogue'>[Back to Top]</a>
 
+#### 4.3. Evaluate on the inference result<a href='#all_catelogue'>[Back to Top]</a>
 ---------
 
 ## Contact
