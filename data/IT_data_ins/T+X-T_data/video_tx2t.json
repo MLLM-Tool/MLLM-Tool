@@ -1,0 +1,4706 @@
+[
+    {
+        "id": 1,
+        "image_path": "",
+        "video_path": "video/dglCzcubsw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What sport is being played in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "image_path": "",
+        "video_path": "video/dglCzcubsw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What sport is being played in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "image_path": "",
+        "video_path": "video/dglCzcubsw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What sport is being played in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "image_path": "",
+        "video_path": "video/dglCzcubsw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What sport is being played in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "image_path": "",
+        "video_path": "video/8jupxSTBZlU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the person's action, and create a story-like text based on the label name.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "image_path": "",
+        "video_path": "video/8jupxSTBZlU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the person's action, and create a story-like text based on the label name.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "image_path": "",
+        "video_path": "video/8jupxSTBZlU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the person's action, and create a story-like text based on the label name.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "image_path": "",
+        "video_path": "video/8jupxSTBZlU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the person's action, and create a story-like text based on the label name.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "image_path": "",
+        "video_path": "video/4lkA54XAABM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the action taking place in the video, and based on the label to generate a similar scene.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "image_path": "",
+        "video_path": "video/4lkA54XAABM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the action taking place in the video, and based on the label to generate a similar scene.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "image_path": "",
+        "video_path": "video/4lkA54XAABM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the action taking place in the video, and based on the label to generate a similar scene.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "image_path": "",
+        "video_path": "video/4lkA54XAABM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the action taking place in the video, and based on the label to generate a similar scene.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "image_path": "",
+        "video_path": "video/0ab_a244Vm0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the person's interaction with animals or wildlife in the video and then replace the person into a robot.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "image_path": "",
+        "video_path": "video/0ab_a244Vm0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the person's interaction with animals or wildlife in the video and then replace the person into a robot.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "image_path": "",
+        "video_path": "video/0ab_a244Vm0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the person's interaction with animals or wildlife in the video and then replace the person into a robot.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "image_path": "",
+        "video_path": "video/0ab_a244Vm0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the person's interaction with animals or wildlife in the video and then replace the person into a robot.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "image_path": "",
+        "video_path": "video/6qicViYR7co.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What type of movement or action is demonstrated in the video, and then translate the label name into chinese.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "image_path": "",
+        "video_path": "video/6qicViYR7co.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What type of movement or action is demonstrated in the video, and then translate the label name into chinese.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "image_path": "",
+        "video_path": "video/6qicViYR7co.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What type of movement or action is demonstrated in the video, and then translate the label name into chinese.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "image_path": "",
+        "video_path": "video/6qicViYR7co.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What type of movement or action is demonstrated in the video, and then translate the label name into chinese.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "image_path": "",
+        "video_path": "video/2DVQEhzw2IA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the outdoor activity depicted in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "image_path": "",
+        "video_path": "video/2DVQEhzw2IA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the outdoor activity depicted in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "image_path": "",
+        "video_path": "video/2DVQEhzw2IA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the outdoor activity depicted in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "image_path": "",
+        "video_path": "video/2DVQEhzw2IA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the outdoor activity depicted in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "image_path": "",
+        "video_path": "video/3sbdL07_kMs.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the skill being showcased by the person in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "image_path": "",
+        "video_path": "video/3sbdL07_kMs.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the skill being showcased by the person in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "image_path": "",
+        "video_path": "video/3sbdL07_kMs.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the skill being showcased by the person in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "image_path": "",
+        "video_path": "video/3sbdL07_kMs.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the skill being showcased by the person in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What game is being played in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What game is being played in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What game is being played in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What game is being played in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "image_path": "",
+        "video_path": "video/81-iBUya_iY.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Name the musical instrument being used by the performer.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "image_path": "",
+        "video_path": "video/81-iBUya_iY.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Name the musical instrument being used by the performer.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "image_path": "",
+        "video_path": "video/81-iBUya_iY.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Name the musical instrument being used by the performer.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "image_path": "",
+        "video_path": "video/81-iBUya_iY.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Name the musical instrument being used by the performer.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "image_path": "",
+        "video_path": "video/3751dFivR-g.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Categorize the movements of the person and replace the person with the batman.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "image_path": "",
+        "video_path": "video/3751dFivR-g.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Categorize the movements of the person and replace the person with the batman.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "image_path": "",
+        "video_path": "video/3751dFivR-g.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Categorize the movements of the person and replace the person with the batman.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "image_path": "",
+        "video_path": "video/3751dFivR-g.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Categorize the movements of the person and replace the person with the batman.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "image_path": "",
+        "video_path": "video/Zk5N383NEI8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Categorize the character's action and construct a narrative-inspired text based on the label.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "image_path": "",
+        "video_path": "video/Zk5N383NEI8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Categorize the character's action and construct a narrative-inspired text based on the label.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "image_path": "",
+        "video_path": "video/Zk5N383NEI8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Categorize the character's action and construct a narrative-inspired text based on the label.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "image_path": "",
+        "video_path": "video/Zk5N383NEI8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Categorize the character's action and construct a narrative-inspired text based on the label.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "image_path": "",
+        "video_path": "video/Tsv1WYs09bc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detect and label the specific exercise being carried out by the individual in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "image_path": "",
+        "video_path": "video/Tsv1WYs09bc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detect and label the specific exercise being carried out by the individual in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "image_path": "",
+        "video_path": "video/Tsv1WYs09bc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detect and label the specific exercise being carried out by the individual in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "image_path": "",
+        "video_path": "video/Tsv1WYs09bc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detect and label the specific exercise being carried out by the individual in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "image_path": "",
+        "video_path": "video/WnfnHmIGAUI.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the motion being displayed, and retrieve a similar video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "image_path": "",
+        "video_path": "video/WnfnHmIGAUI.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the motion being displayed, and retrieve a similar video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "image_path": "",
+        "video_path": "video/WnfnHmIGAUI.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the motion being displayed, and retrieve a similar video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 52,
+        "image_path": "",
+        "video_path": "video/WnfnHmIGAUI.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the motion being displayed, and retrieve a similar video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "image_path": "",
+        "video_path": "video/tNpR5rXdGMA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the instrument being played by the person and then add appropriate sound effects to their action.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 54,
+        "image_path": "",
+        "video_path": "video/tNpR5rXdGMA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the instrument being played by the person and then add appropriate sound effects to their action.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "image_path": "",
+        "video_path": "video/tNpR5rXdGMA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the instrument being played by the person and then add appropriate sound effects to their action.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "image_path": "",
+        "video_path": "video/tNpR5rXdGMA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the instrument being played by the person and then add appropriate sound effects to their action.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 57,
+        "image_path": "",
+        "video_path": "video/PYHf3o2Zogc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detail the dish being prepared by the chef in the video and then transfer the video into a cartoon style.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 58,
+        "image_path": "",
+        "video_path": "video/PYHf3o2Zogc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detail the dish being prepared by the chef in the video and then transfer the video into a cartoon style.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 59,
+        "image_path": "",
+        "video_path": "video/PYHf3o2Zogc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detail the dish being prepared by the chef in the video and then transfer the video into a cartoon style.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 60,
+        "image_path": "",
+        "video_path": "video/PYHf3o2Zogc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detail the dish being prepared by the chef in the video and then transfer the video into a cartoon style.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 61,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you name the instrument being played by the person?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you name the instrument being played by the person?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you name the instrument being played by the person?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you name the instrument being played by the person?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 65,
+        "image_path": "",
+        "video_path": "video/16v5UDv3dRE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Define the main action of the person, and then combine the label names with 'a dog is' to generate a prompt for a video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 66,
+        "image_path": "",
+        "video_path": "video/16v5UDv3dRE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Define the main action of the person, and then combine the label names with 'a dog is' to generate a prompt for a video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 67,
+        "image_path": "",
+        "video_path": "video/16v5UDv3dRE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Define the main action of the person, and then combine the label names with 'a dog is' to generate a prompt for a video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 68,
+        "image_path": "",
+        "video_path": "video/16v5UDv3dRE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Define the main action of the person, and then combine the label names with 'a dog is' to generate a prompt for a video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 69,
+        "image_path": "",
+        "video_path": "video/HmWKqBB42QE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the action taking place in the video of people dancing, and provide a fitting label.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 70,
+        "image_path": "",
+        "video_path": "video/HmWKqBB42QE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the action taking place in the video of people dancing, and provide a fitting label.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 71,
+        "image_path": "",
+        "video_path": "video/HmWKqBB42QE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the action taking place in the video of people dancing, and provide a fitting label.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 72,
+        "image_path": "",
+        "video_path": "video/HmWKqBB42QE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the action taking place in the video of people dancing, and provide a fitting label.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 73,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you determine the activity being performed by the individuals in the video, and then replace the background underwater.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 74,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you determine the activity being performed by the individuals in the video, and then replace the background underwater.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 75,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you determine the activity being performed by the individuals in the video, and then replace the background underwater.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 76,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you determine the activity being performed by the individuals in the video, and then replace the background underwater.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 77,
+        "image_path": "",
+        "video_path": "video/tNpR5rXdGMA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Recognize the type of creature the person is interacting with and envision the scenario without the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 78,
+        "image_path": "",
+        "video_path": "video/tNpR5rXdGMA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Recognize the type of creature the person is interacting with and envision the scenario without the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 79,
+        "image_path": "",
+        "video_path": "video/tNpR5rXdGMA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Recognize the type of creature the person is interacting with and envision the scenario without the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 80,
+        "image_path": "",
+        "video_path": "video/tNpR5rXdGMA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Recognize the type of creature the person is interacting with and envision the scenario without the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 81,
+        "image_path": "",
+        "video_path": "video/Zk5N383NEI8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "First, recognize the action and then generate a story based on the label name.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 82,
+        "image_path": "",
+        "video_path": "video/Zk5N383NEI8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "First, recognize the action and then generate a story based on the label name.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 83,
+        "image_path": "",
+        "video_path": "video/Zk5N383NEI8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "First, recognize the action and then generate a story based on the label name.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 84,
+        "image_path": "",
+        "video_path": "video/Zk5N383NEI8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "First, recognize the action and then generate a story based on the label name.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 85,
+        "image_path": "",
+        "video_path": "video/igd2yyBIl9M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Spotlight the talent being showcased by the individual in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 86,
+        "image_path": "",
+        "video_path": "video/igd2yyBIl9M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Spotlight the talent being showcased by the individual in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 87,
+        "image_path": "",
+        "video_path": "video/igd2yyBIl9M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Spotlight the talent being showcased by the individual in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 88,
+        "image_path": "",
+        "video_path": "video/igd2yyBIl9M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Spotlight the talent being showcased by the individual in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 89,
+        "image_path": "",
+        "video_path": "video/Ob-VYqPMlxM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What activity is taking place in the video of people doing?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 90,
+        "image_path": "",
+        "video_path": "video/Ob-VYqPMlxM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What activity is taking place in the video of people doing?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 91,
+        "image_path": "",
+        "video_path": "video/Ob-VYqPMlxM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What activity is taking place in the video of people doing?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 92,
+        "image_path": "",
+        "video_path": "video/Ob-VYqPMlxM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What activity is taking place in the video of people doing?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 93,
+        "image_path": "",
+        "video_path": "video/PYHf3o2Zogc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you identify the sport being played in the video of people on a court?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 94,
+        "image_path": "",
+        "video_path": "video/PYHf3o2Zogc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you identify the sport being played in the video of people on a court?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 95,
+        "image_path": "",
+        "video_path": "video/PYHf3o2Zogc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you identify the sport being played in the video of people on a court?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 96,
+        "image_path": "",
+        "video_path": "video/PYHf3o2Zogc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you identify the sport being played in the video of people on a court?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 97,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the exercise being performed by the person in the fitness video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 98,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the exercise being performed by the person in the fitness video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 99,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the exercise being performed by the person in the fitness video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 100,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the exercise being performed by the person in the fitness video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 101,
+        "image_path": "",
+        "video_path": "video/WnfnHmIGAUI.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the instrument being played by the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 102,
+        "image_path": "",
+        "video_path": "video/WnfnHmIGAUI.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the instrument being played by the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 103,
+        "image_path": "",
+        "video_path": "video/WnfnHmIGAUI.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the instrument being played by the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 104,
+        "image_path": "",
+        "video_path": "video/WnfnHmIGAUI.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Identify the instrument being played by the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 105,
+        "image_path": "",
+        "video_path": "video/Kw7Jh7Qbr4o.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What food is the chef cooking in the video and then add corresponding sound effects to this person's action.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 106,
+        "image_path": "",
+        "video_path": "video/Kw7Jh7Qbr4o.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What food is the chef cooking in the video and then add corresponding sound effects to this person's action.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 107,
+        "image_path": "",
+        "video_path": "video/Kw7Jh7Qbr4o.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What food is the chef cooking in the video and then add corresponding sound effects to this person's action.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 108,
+        "image_path": "",
+        "video_path": "video/Kw7Jh7Qbr4o.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What food is the chef cooking in the video and then add corresponding sound effects to this person's action.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 109,
+        "image_path": "",
+        "video_path": "video/HnZaDcHyGoc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What type of dance is the person performing and generate a caption for the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 110,
+        "image_path": "",
+        "video_path": "video/HnZaDcHyGoc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What type of dance is the person performing and generate a caption for the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 111,
+        "image_path": "",
+        "video_path": "video/HnZaDcHyGoc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What type of dance is the person performing and generate a caption for the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 112,
+        "image_path": "",
+        "video_path": "video/HnZaDcHyGoc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What type of dance is the person performing and generate a caption for the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 113,
+        "image_path": "",
+        "video_path": "video/HmWKqBB42QE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What kind of outdoor activity is depicted in the video, and based on the label, retrieve a similar video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 114,
+        "image_path": "",
+        "video_path": "video/HmWKqBB42QE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What kind of outdoor activity is depicted in the video, and based on the label, retrieve a similar video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 115,
+        "image_path": "",
+        "video_path": "video/HmWKqBB42QE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What kind of outdoor activity is depicted in the video, and based on the label, retrieve a similar video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 116,
+        "image_path": "",
+        "video_path": "video/HmWKqBB42QE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What kind of outdoor activity is depicted in the video, and based on the label, retrieve a similar video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 117,
+        "image_path": "",
+        "video_path": "video/G2tStoC-u64.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What kind of animal is the person interacting with, and then remove the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 118,
+        "image_path": "",
+        "video_path": "video/G2tStoC-u64.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What kind of animal is the person interacting with, and then remove the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 119,
+        "image_path": "",
+        "video_path": "video/G2tStoC-u64.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What kind of animal is the person interacting with, and then remove the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 120,
+        "image_path": "",
+        "video_path": "video/G2tStoC-u64.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What kind of animal is the person interacting with, and then remove the person.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 121,
+        "image_path": "",
+        "video_path": "video/AxdryO9xnuM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What is the primary action of the individual, and then concatenate the label names with 'a bear is' and use it as a prompt to generate a video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 122,
+        "image_path": "",
+        "video_path": "video/AxdryO9xnuM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What is the primary action of the individual, and then concatenate the label names with 'a bear is' and use it as a prompt to generate a video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 123,
+        "image_path": "",
+        "video_path": "video/AxdryO9xnuM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What is the primary action of the individual, and then concatenate the label names with 'a bear is' and use it as a prompt to generate a video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 124,
+        "image_path": "",
+        "video_path": "video/AxdryO9xnuM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What is the primary action of the individual, and then concatenate the label names with 'a bear is' and use it as a prompt to generate a video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 125,
+        "image_path": "",
+        "video_path": "video/3_0hxbTUTL4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I recorded a birthday celebration. Can you provide a textual description of the events happening in this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 126,
+        "image_path": "",
+        "video_path": "video/3_0hxbTUTL4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I recorded a birthday celebration. Can you provide a textual description of the events happening in this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 127,
+        "image_path": "",
+        "video_path": "video/3_0hxbTUTL4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I recorded a birthday celebration. Can you provide a textual description of the events happening in this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 128,
+        "image_path": "",
+        "video_path": "video/3_0hxbTUTL4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I recorded a birthday celebration. Can you provide a textual description of the events happening in this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 129,
+        "image_path": "",
+        "video_path": "video/C-80pg2OkQ0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured an interesting dance performance on video. Can you help describe the dance movements and sequences?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 130,
+        "image_path": "",
+        "video_path": "video/C-80pg2OkQ0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured an interesting dance performance on video. Can you help describe the dance movements and sequences?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 131,
+        "image_path": "",
+        "video_path": "video/C-80pg2OkQ0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured an interesting dance performance on video. Can you help describe the dance movements and sequences?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 132,
+        "image_path": "",
+        "video_path": "video/C-80pg2OkQ0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured an interesting dance performance on video. Can you help describe the dance movements and sequences?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 133,
+        "image_path": "",
+        "video_path": "video/jo11OTOS-b4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I attended a concert and took a video. Can you write down a description of the artists and their performances?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 134,
+        "image_path": "",
+        "video_path": "video/jo11OTOS-b4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I attended a concert and took a video. Can you write down a description of the artists and their performances?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 135,
+        "image_path": "",
+        "video_path": "video/jo11OTOS-b4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I attended a concert and took a video. Can you write down a description of the artists and their performances?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 136,
+        "image_path": "",
+        "video_path": "video/jo11OTOS-b4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I attended a concert and took a video. Can you write down a description of the artists and their performances?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 137,
+        "image_path": "",
+        "video_path": "video/99Nv0yFgBqA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I documented a meeting. Could you describe the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 138,
+        "image_path": "",
+        "video_path": "video/99Nv0yFgBqA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I documented a meeting. Could you describe the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 139,
+        "image_path": "",
+        "video_path": "video/99Nv0yFgBqA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I documented a meeting. Could you describe the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 140,
+        "image_path": "",
+        "video_path": "video/99Nv0yFgBqA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I documented a meeting. Could you describe the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 141,
+        "image_path": "",
+        "video_path": "video/10xhPhBo0k_000498_000508.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I have a recording of a birthday party; can you generate a caption for the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 142,
+        "image_path": "",
+        "video_path": "video/10xhPhBo0k_000498_000508.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I have a recording of a birthday party; can you generate a caption for the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 143,
+        "image_path": "",
+        "video_path": "video/10xhPhBo0k_000498_000508.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I have a recording of a birthday party; can you generate a caption for the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 144,
+        "image_path": "",
+        "video_path": "video/10xhPhBo0k_000498_000508.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I have a recording of a birthday party; can you generate a caption for the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 145,
+        "image_path": "",
+        "video_path": "video/M3_7e_exd8_000108_000118.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured a video of a performance; can you describe the scene for me in text?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 146,
+        "image_path": "",
+        "video_path": "video/M3_7e_exd8_000108_000118.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured a video of a performance; can you describe the scene for me in text?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 147,
+        "image_path": "",
+        "video_path": "video/M3_7e_exd8_000108_000118.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured a video of a performance; can you describe the scene for me in text?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 148,
+        "image_path": "",
+        "video_path": "video/M3_7e_exd8_000108_000118.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured a video of a performance; can you describe the scene for me in text?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 149,
+        "image_path": "",
+        "video_path": "video/C6BDDvJO4A_000045_000055.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Generate a brief description of this video showing a DIY PC assembly.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 150,
+        "image_path": "",
+        "video_path": "video/C6BDDvJO4A_000045_000055.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Generate a brief description of this video showing a DIY PC assembly.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 151,
+        "image_path": "",
+        "video_path": "video/C6BDDvJO4A_000045_000055.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Generate a brief description of this video showing a DIY PC assembly.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 152,
+        "image_path": "",
+        "video_path": "video/C6BDDvJO4A_000045_000055.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Generate a brief description of this video showing a DIY PC assembly.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 153,
+        "image_path": "",
+        "video_path": "video/QOiBLyrsTY_000015_000025.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Provide a description for this clip of children playing in a park.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 154,
+        "image_path": "",
+        "video_path": "video/QOiBLyrsTY_000015_000025.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Provide a description for this clip of children playing in a park.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 155,
+        "image_path": "",
+        "video_path": "video/QOiBLyrsTY_000015_000025.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Provide a description for this clip of children playing in a park.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 156,
+        "image_path": "",
+        "video_path": "video/QOiBLyrsTY_000015_000025.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Provide a description for this clip of children playing in a park.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 157,
+        "image_path": "",
+        "video_path": "video/3_0hxbTUTL4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I recorded a birthday celebration. Can you provide a textual description of the events happening in this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/git-base-vatex",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 158,
+        "image_path": "",
+        "video_path": "video/3_0hxbTUTL4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I recorded a birthday celebration. Can you provide a textual description of the events happening in this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "Neleac/timesformer-gpt2-video-captioning",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 159,
+        "image_path": "",
+        "video_path": "video/C-80pg2OkQ0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured an interesting dance performance on video. Can you help describe the dance movements and sequences?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/git-base-vatex",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 160,
+        "image_path": "",
+        "video_path": "video/C-80pg2OkQ0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I've captured an interesting dance performance on video. Can you help describe the dance movements and sequences?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "Neleac/timesformer-gpt2-video-captioning",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 161,
+        "image_path": "",
+        "video_path": "video/99Nv0yFgBqA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I documented a meeting. Could you describe the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/git-base-vatex",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 162,
+        "image_path": "",
+        "video_path": "video/99Nv0yFgBqA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I documented a meeting. Could you describe the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "Neleac/timesformer-gpt2-video-captioning",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 163,
+        "image_path": "",
+        "video_path": "video/4lkA54XAABM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Could you provide a description of my actions and reactions in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/git-base-vatex",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 164,
+        "image_path": "",
+        "video_path": "video/4lkA54XAABM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Could you provide a description of my actions and reactions in the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "Neleac/timesformer-gpt2-video-captioning",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 165,
+        "image_path": "",
+        "video_path": "video/16v5UDv3dRE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you generate a description of the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/git-base-vatex",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 166,
+        "image_path": "",
+        "video_path": "video/16v5UDv3dRE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you generate a description of the video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "Neleac/timesformer-gpt2-video-captioning",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 167,
+        "image_path": "",
+        "video_path": "video/81-iBUya_iY.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you detail the stalls, activities, and crowd interactions of this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/git-base-vatex",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 168,
+        "image_path": "",
+        "video_path": "video/81-iBUya_iY.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you detail the stalls, activities, and crowd interactions of this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "Neleac/timesformer-gpt2-video-captioning",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 169,
+        "image_path": "",
+        "video_path": "video/ME-c9RMUXgk.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detail the stalls and activities in this video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/git-base-vatex",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 170,
+        "image_path": "",
+        "video_path": "video/ME-c9RMUXgk.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Detail the stalls and activities in this video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "Neleac/timesformer-gpt2-video-captioning",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 171,
+        "image_path": "",
+        "video_path": "video/MO1SzsOSjn0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Provide a description of actions in this video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/git-base-vatex",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 172,
+        "image_path": "",
+        "video_path": "video/MO1SzsOSjn0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Provide a description of actions in this video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "Neleac/timesformer-gpt2-video-captioning",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 173,
+        "image_path": "",
+        "video_path": "video/aa_Ei619oEw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the action in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 174,
+        "image_path": "",
+        "video_path": "video/aa_Ei619oEw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the action in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 175,
+        "image_path": "",
+        "video_path": "video/aa_Ei619oEw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the action in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 176,
+        "image_path": "",
+        "video_path": "video/aa_Ei619oEw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the action in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 177,
+        "image_path": "",
+        "video_path": "video/aa_Ei619oEw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the action in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 178,
+        "image_path": "",
+        "video_path": "video/aa_Ei619oEw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the action in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 179,
+        "image_path": "",
+        "video_path": "video/aa_Ei619oEw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the action in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 180,
+        "image_path": "",
+        "video_path": "video/aa_Ei619oEw.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Classify the action in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 181,
+        "image_path": "",
+        "video_path": "video/E41gH3sDjEE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Extract the core features from this video to assist in curating content.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch16-zero-shot",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 182,
+        "image_path": "",
+        "video_path": "video/AHFDyUfRMyM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you breakdown this video and extract vital features for a comparative study?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch16-zero-shot",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 183,
+        "image_path": "",
+        "video_path": "video/E41gH3sDjEE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Analyze this video presentation and provide its core features to improve our corporate training modules.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch16-zero-shot",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 184,
+        "image_path": "",
+        "video_path": "video/Kw7Jh7Qbr4o.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "From this video, identify and extract key features to help in recipe categorization.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch16-zero-shot",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 185,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Extract pivotal features from this video interview to assist in our content analysis for a magazine article.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch16-zero-shot",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 186,
+        "image_path": "",
+        "video_path": "video/P5j1piJ82ac.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Examine this product demo video and extract its salient features.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch16-zero-shot",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 187,
+        "image_path": "",
+        "video_path": "video/avzhX7NVJ1U.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Extract distinguishing features from this sports video to help refine our team's training regimen.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch16-zero-shot",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 188,
+        "image_path": "",
+        "video_path": "video/16v5UDv3dRE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Help me determine the primary elements of this dance video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch16-zero-shot",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 189,
+        "image_path": "",
+        "video_path": "video/zl2-s142Gy8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you provide a description for this video I just uploaded?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "kpyu/video-blip-flan-t5-xl-ego4d",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 190,
+        "image_path": "",
+        "video_path": "video/VB8wOypyU_k.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "I took a video. Can you summarize the scenes?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "kpyu/video-blip-flan-t5-xl-ego4d",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 191,
+        "image_path": "",
+        "video_path": "video/P5j1piJ82ac.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you provide a description for this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "kpyu/video-blip-flan-t5-xl-ego4d",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 192,
+        "image_path": "",
+        "video_path": "video/noqJn8_SPv0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "What are the main events in this video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "kpyu/video-blip-flan-t5-xl-ego4d",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 193,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the main scences in this video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "kpyu/video-blip-flan-t5-xl-ego4d",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 194,
+        "image_path": "",
+        "video_path": "video/kfytEreujgM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you describe the activities in this camping trip video?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "kpyu/video-blip-flan-t5-xl-ego4d",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 195,
+        "image_path": "",
+        "video_path": "video/E41gH3sDjEE.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe the main actions in this conference clip.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "kpyu/video-blip-flan-t5-xl-ego4d",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 196,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Describe what's happening in this clip of children playing at a park.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "kpyu/video-blip-flan-t5-xl-ego4d",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 197,
+        "image_path": "",
+        "video_path": "video/Q1.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you autoencode a video of a cooking tutorial that includes spoken instructions and on-screen text?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "deepmind/multimodal-perceiver",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 198,
+        "image_path": "",
+        "video_path": "video/Q4.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Please autoencode a video clip of a news broadcast that includes the reporter's commentary and subtitles.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "deepmind/multimodal-perceiver",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 199,
+        "image_path": "",
+        "video_path": "video/Q5.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "How does you autoencode a silent film with scene descriptions and musical accompaniment?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "deepmind/multimodal-perceiver",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 200,
+        "image_path": "",
+        "video_path": "video/Q6.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you autoencode a video of a live theater performance with dialogue and accompanying text annotations?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "deepmind/multimodal-perceiver",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 201,
+        "image_path": "",
+        "video_path": "video/Q7.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Could you an animated story with voice-over narration and written character dialogue?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "deepmind/multimodal-perceiver",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 202,
+        "image_path": "",
+        "video_path": "video/Q8.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Please autoencode a children's cartoon with dialogue and on-screen text for learning reading skills.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "deepmind/multimodal-perceiver",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 203,
+        "image_path": "",
+        "video_path": "video/Q9.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you autoencode a car repair guide video with the mechanic's explanations and annotations?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "deepmind/multimodal-perceiver",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 204,
+        "image_path": "",
+        "video_path": "video/Q10.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you autoencode a makeup tutorial video that includes the vlogger's commentary and product names in text?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "deepmind/multimodal-perceiver",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 205,
+        "image_path": "",
+        "video_path": "video/CYBuvlIw0Q_000054_000064.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Remove the extra person who walked into the frame in the background of my video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 206,
+        "image_path": "",
+        "video_path": "video/0ab_a244Vm0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you edit out the cookies from this outdoor concert footage?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 207,
+        "image_path": "",
+        "video_path": "video/3sbdL07_kMs.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Convert this color film to black and white without any manual input.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 208,
+        "image_path": "",
+        "video_path": "video/3751dFivR-g.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you convert this 3D film to 2D?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 209,
+        "image_path": "",
+        "video_path": "video/2DVQEhzw2IA.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Enhance this low-resolution video to 8K using only this clip.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 210,
+        "image_path": "",
+        "video_path": "video/2P1uKiXhJzc.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Change the direction of the shadows in this video to match a different time of day.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 211,
+        "image_path": "",
+        "video_path": "video/6qicViYR7co.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Make it look like the person in this video is walking in the opposite direction.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 212,
+        "image_path": "",
+        "video_path": "video/8jupxSTBZlU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Remove the branding from the background in the video.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 213,
+        "image_path": "",
+        "video_path": "video/C-80pg2OkQ0.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you add realistic dinosaur creatures into this nature documentary?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 214,
+        "image_path": "",
+        "video_path": "video/nKk_mcXDm7M.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Change the weather in this video from cloudy to sunny.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 215,
+        "image_path": "",
+        "video_path": "video/Kw7Jh7Qbr4o.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Remove all the furniture from this video of a room.",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 216,
+        "image_path": "",
+        "video_path": "video/kfytEreujgM.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Can you edit this video to make it look like it's daytime when it was shot at night?",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "unknown",
+                "ambiguity": -1,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 217,
+        "image_path": "",
+        "video_path": "video/SZPAgk4UzKU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Illustrate the activity portrayed in the video",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 218,
+        "image_path": "",
+        "video_path": "video/SZPAgk4UzKU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Illustrate the activity portrayed in the video",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 219,
+        "image_path": "",
+        "video_path": "video/SZPAgk4UzKU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Illustrate the activity portrayed in the video",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 220,
+        "image_path": "",
+        "video_path": "video/SZPAgk4UzKU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Illustrate the activity portrayed in the video",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 221,
+        "image_path": "",
+        "video_path": "video/SZPAgk4UzKU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Illustrate the activity portrayed in the video",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "MCG-NJU/videomae-base-finetuned-kinetics",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 222,
+        "image_path": "",
+        "video_path": "video/SZPAgk4UzKU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Illustrate the activity portrayed in the video",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-base-finetuned-k600",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 223,
+        "image_path": "",
+        "video_path": "video/SZPAgk4UzKU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Illustrate the activity portrayed in the video",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "facebook/timesformer-hr-finetuned-k400",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    },
+    {
+        "id": 224,
+        "image_path": "",
+        "video_path": "video/SZPAgk4UzKU.mp4",
+        "audio_path": "",
+        "input_modality": "video",
+        "output_modality": "text",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "Illustrate the activity portrayed in the video",
+                "input_modality": "video"
+            },
+            {
+                "from": "gpt",
+                "value": "microsoft/xclip-base-patch32",
+                "ambiguity": 2,
+                "output_modality": "text"
+            }
+        ]
+    }
+]
