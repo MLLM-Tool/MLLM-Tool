@@ -17,16 +17,16 @@ This repository hosts the code, data and model weight of **Tool_LMM**, the first
 
 ## 🎉 News 
 
-- [x] [2023.09.15] 🚀🚀 Release the code of NExT-GPT in version `7b_tiva_v0`.
-- [x] [2023.09.27] 🔨🧩 Added modality-blended batch sampler .
-- [x] [2023.10.01] 📢📢 Release the T2M instruction dataset.
-- [x] [2023.10.04] 👏👏 Release the checkpoint of NExT-GPT in version [7b_tiva_v0](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0) .
+- [x] [2024.01.16] 🚀🚀 Release the code of NExT-GPT in version `7b_tiva_v0`.
+- [x] [2024.01.16] 🔨🧩 Added modality-blended batch sampler .
+- [x] [2024.01.16] 📢📢 Release the T2M instruction dataset.
+- [x] [2024.01.16] 👏👏 Release the checkpoint of NExT-GPT in version [7b_tiva_v0](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0) .
 - [x] [2023.10.15] 🔨🚀 Update of NExT-GPT in version [7b_tiva_v0](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0) .
 
 ## 👉 TODO 
-- [ ] Release MosIT data.
-- [ ] Updating NExT-GPT in more types&sizes of LLMs.
-- [ ] Empowering NExT-GPT with more modalities of inputs&outputs.
+- [ ] Collect more data and release v2 dataset.
+- [ ] Updating Tool_LMM in more types&sizes of LLMs.
+- [ ] Empowering Tool_LMM with retrieving open-set tools.
 - [ ] ...
 
 
@@ -78,7 +78,7 @@ For more technical details, kindly refer to the [paper](https://arxiv.org/pdf/23
 
 ```
 ├── data
-│   ├── IT_data                           # instruction data
+│   ├── IT_data_ins                           # instruction data
 │   │   └── T+X-T_data                    # text+[image/audio/video] to text instruction data
 ├── code
 │   ├── config
@@ -106,7 +106,7 @@ For more technical details, kindly refer to the [paper](https://arxiv.org/pdf/23
 │   ├── process_embeddings.py             # precompute the captions embeddings
 │   ├── train.py                          # training
 │   └── inference.py                      # inference
-├── pretrained_ckpt                   # frozen params of pretrained modules
+├── pretrained_checkpoint                   # frozen params of pretrained modules
 │   ├── imagebind_ckpt
 │   │   ├──huge                       # version
 │   │   │   └──imagebind_huge.pth
