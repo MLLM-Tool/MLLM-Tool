@@ -1,5 +1,5 @@
-# <img src="code/nextgpt.png" style="width: 5%"> NExT-GPT: Any-to-Any Multimodal LLM
-[Shengqiong Wu](https://chocowu.github.io/), [Hao Fei](http://haofei.vip/)*, [Leigang Qu](#), [Wei Ji](https://jiwei0523.github.io/), and [Tat-Seng Chua](https://www.chuatatseng.com/).
+# Tool_LMM:A Large Multi-Modal Model for Tool Learning
+[Chenyu Wang], [Weixin Luo], [Lin Ma], [Shenghua Gao](*).
 (*Correspondence )
 
 **Tool_LMM, School of Information Science and Technology, ShanghaiTech University**
@@ -9,10 +9,8 @@
 <a href='https://next-gpt.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 <a href='#'><img src='https://img.shields.io/badge/Demo-Page-purple'></a> 
 <a href='https://arxiv.org/pdf/2309.05519'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
-![License](https://img.shields.io/badge/License-BSD-blue.svg)
-[![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://www.youtube.com/watch?v=aqw2SCWeWD0)
 
-This repository hosts the code, data and model weight of **NExT-GPT**, the first end-to-end MM-LLM that perceives input and generates output in arbitrary combinations (any-to-any) of text, image, video, and audio and beyond.
+This repository hosts the code, data and model weight of **Tool_LMM**, the first end-to-end MM-LLM that perceives input and generates output in arbitrary combinations (any-to-any) of text, image, video, and audio and beyond.
 
 
 -----------
@@ -33,17 +31,6 @@ This repository hosts the code, data and model weight of **NExT-GPT**, the first
 
 
 -----------
-
-## Example Demos
-Here we showcase examples generated from NExT-GPT.
-For more examples, kindly visit the [webpage](https://next-gpt.github.io/), or the online live [demo](https://df7fd56ea5b5d558d3.gradio.live). 
-
-https://github.com/NExT-GPT/NExT-GPT/assets/18722770/0c2b3d88-a533-4899-ab44-65580fe54538
-
-https://github.com/NExT-GPT/NExT-GPT/assets/18722770/eb1319a6-38aa-4546-a96e-163207e7de93
-
-https://github.com/NExT-GPT/NExT-GPT/assets/18722770/36bec0ad-9bad-4bcf-bc37-92b028f1bc6a
-
 
 <span id='introduction'/>
 
@@ -82,7 +69,6 @@ For more technical details, kindly refer to the [paper](https://arxiv.org/pdf/23
   * <a href='#Deploy Demo System'>4.2. Deploying Demo System</a>
 
 ****
-
 
 
 
