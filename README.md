@@ -186,7 +186,7 @@ We divide the training set according to the different modality combination of th
 
 For the testing set, you can also download from 
 
-After downloading the dataset, please put it under the path [[data/IT_data_ins/T+X-T_data/]]
+After downloading the dataset, please put it under the path [data/IT_data_ins/T+X-T_data/]
     
     Side note：After downloading dataset, please run `preprocess_dataset.py` to preprocess the dataset into a unified format.
 
@@ -241,9 +241,9 @@ The whole Tool_LMM training involves:
 
 #### 4.1. Preparing Checkpoints<a href='#all_catelogue'>[Back to Top]</a>
 
-You can either 1) use the params trained yourselves, or 2) download our checkpoints from the following links.
+You can either 1) use the params trained yourselves, or 2) download our checkpoints from [here](https://drive.google.com/drive/folders/1hEWOe25LitkL8Y4aYqwN_V2wfnTyL4TO?usp=drive_link).
 
-The checkpoints should be stored under the path
+The checkpoints should be stored under the path [code/ckpt/]
 
 <span id='Inference'/>
 
