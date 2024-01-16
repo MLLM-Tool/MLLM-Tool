@@ -217,7 +217,7 @@ where the key arguments are:
 - `--stage`: training stage.
 - `--imagebind_ckpt_path`: the directory which saves the pretrained imagebind weights.
 - `--llm_ckpt_path`: the directory which saves the pretrained large language model weights.
-- `--max_tgt_len`: the maximum target length.
+- `--max_tgt_len`: the maximum sequence length.
 - `--save_path`: the directory which saves the trained delta weights. This directory will be automatically created.
 - `--log_path`: the directory which saves the log file.
 
