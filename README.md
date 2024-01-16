@@ -186,7 +186,7 @@ We divide the training set according to the different modality combination of th
 
 For the testing set, you can also download from 
 
-After downloading the dataset, please put it under the fold 'data/IT_data_ins/T+X-T_data/'
+After downloading the dataset, please put it under the path [[data/IT_data_ins/T+X-T_data/]]
     
     Side note：After downloading dataset, please run `preprocess_dataset.py` to preprocess the dataset into a unified format.
 
@@ -242,15 +242,17 @@ The whole Tool_LMM training involves:
 #### 4.1. Preparing Checkpoints<a href='#all_catelogue'>[Back to Top]</a>
 
 You can either 1) use the params trained yourselves, or 2) download our checkpoints from the following links.
-- **Step-1**: load `Frozen parameters`. Please refer to <a href='#Prepare Pre-trained Checkpoint'>3.1 Preparing Pre-trained Checkpoint</a>.
 
-- **Step-2**: load `Tunable parameters`. Please put the NExT-GPT system at [[./ckpt/delta_ckpt/nextgpt/7b_tiva_v0]](./ckpt/delta_ckpt/nextgpt/7b_tiva_v0). You may either 1) use the params trained yourselves, or 2) download our checkpoints from [Huggingface](https://huggingface.co/ChocoWu/nextgpt_7b_tiva_v0). 
+The checkpoints should be stored under the path
 
-<span id='Deploy Demo System'/>
+<span id='Inference'/>
 
 #### 4.2. Inference <a href='#all_catelogue'>[Back to Top]</a>
 
-#### 4.3. Evaluate on the inference result<a href='#all_catelogue'>[Back to Top]</a>
+
+<span id=' Evaluate on the inference prediction'/>
+
+#### 4.3. Evaluate on the inference prediction<a href='#all_catelogue'>[Back to Top]</a>
 ---------
 
 ## Contact
