@@ -249,6 +249,17 @@ The checkpoints should be stored under the path [code/ckpt/]
 
 #### 4.2. Inference <a href='#all_catelogue'>[Back to Top]</a>
 
+The inference of Tool_LMM starts with this script:
+```angular2html
+python inference.py
+```
+
+The prediction output would save in the format of JSON under the path [data/inference/]. Specifically, the format would be 
+```angular2html
+   "question_id": idx,
+   "questions": prompt,
+   "response": output,
+```
 
 <span id=' Evaluate on the inference prediction'/>
 
