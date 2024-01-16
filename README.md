@@ -77,36 +77,42 @@ For more technical details, kindly refer to the [paper](https://arxiv.org/pdf/23
 ```
 ├── data
 │   ├── IT_data_ins                           # instruction data
-│   │   └── T+X-T_data                    # text+[image/audio/video] to text instruction data
+│   │   └── T+X-T_data                        # text+[image/audio/video] to text instruction data
+│   │   │   ├── mm_dataset                    # multimodal input data
+│   │   │   ├── audio_tx2t.json
+│   │   │   ├── image_tx2t.json
+│   │   │   ├── text_t2t.json
+│   │   │   ├── video_tx2t.json
+│   │   │   └── combined_data.json
 ├── code
 │   ├── config
 │   │   ├──__init__.py
-│   │   ├── base.yaml                     # the model configuration 
-│   │   └── openllama_peft.yaml                  # instruction-tuning configuration
+│   │   ├── base.yaml                         # the model configuration 
+│   │   └── openllama_peft.yaml               # instruction-tuning configuration
 │   ├── dsconfig
-│   │   └──  openllama_peft_stage_1.json                  # deepspeed configuration for instruction-tuning training
+│   │   └──  openllama_peft_stage_1.json      # deepspeed configuration for instruction-tuning training
 │   ├── dataset
 │   │   ├──__init__ .py
 │   │   ├──_sampler.py
 │   │   ├──_utils.py
-│   │   ├── catalog.py                    # the catalog information of the dataset
-│   │   ├── T+X-T_instruction_dataset.py  # process and load text+x-to-text instruction dataset
-│   │   └── concat_dataset.py             # process and load multiple dataset
+│   │   ├── catalog.py                        # the catalog information of the dataset
+│   │   ├── T+X-T_instruction_dataset.py      # process and load text+x-to-text instruction dataset
+│   │   └── concat_dataset.py                 # process and load multiple dataset
 │   ├── model                     
-│   │   ├── ImageBind                     # the code from ImageBind Model
+│   │   ├── ImageBind                         # the code from ImageBind Model
 │   │   ├──__init__ .py 
-│   │   ├── openllama.py       # the main model file
+│   │   ├── openllama.py                      # the main model file
 │   │   ├── agent.py
 │   │   └── modeling_llama.py
 │   ├── scripts
-│   │   └── train.sh                      # training Tool_LMM script
+│   │   └── train.sh                          # training Tool_LMM script
 │   ├── header.py
-│   ├── process_embeddings.py             # precompute the captions embeddings
-│   ├── train.py                          # training
-│   └── inference.py                      # inference
-├── pretrained_checkpoint                   # frozen params of pretrained modules
+│   ├── process_embeddings.py                 # precompute the captions embeddings
+│   ├── train.py                              # training
+│   └── inference.py                          # inference
+├── pretrained_checkpoint                     # frozen params of pretrained modules
 │   ├── imagebind_ckpt
-│   │   ├──huge                       # version
+│   │   ├──huge                               # version
 │   │   │   └──imagebind_huge.pth
 │   ├── llm_ckpt
 │   │   ├── vicuna_7b
@@ -175,16 +181,11 @@ first prepare the LLaMA by following the instructions [[here]](ckpt/pretrained_c
 #### 3.2. Preparing Dataset  <a href='#all_catelogue'>[Back to Top]</a>
 Please download the following datasets used for model training:
 
-A) T-X pairs data
-  - `CC3M` of ***text-image*** pairs, please follow this instruction [[here]](./data/T-X_pair_data/cc3m/prepare.md). Then put the data at [[./data/T-X_pair_data/cc3m]](./data/T-X_pair_data/cc3m).
-  - `WebVid` of ***text-video*** pairs, see the [[instruction]](./data/T-X_pair_data/webvid/prepare.md). The file should be saved at [[./data/T-X_pair_data/webvid]](./data/T-X_pair_data/webvid).
-  - `AudioCap` of ***text-audio*** pairs, see the [[instruction]](./data/T-X_pair_data/audiocap/prepare.md). Save the data in [[./data/T-X_pair_data/audiocap]](./data/T-X_pair_data/audiocap).
+We divide the training set according to the different modality combination of the input instruction, and you can download from 
 
-B) Instruction data
-  - T+X-T
-    - `LLaVA` of the ***visual instruction data***, download it from [here](https://github.com/haotian-liu/LLaVA/blob/main/docs/Data.md), and then put it at [[./data/IT_data/T+X-T_data/llava]](./data/IT_data/T+X-T_data/llava/).
-    - `Alpaca` of the ***textual instruction data***, download it from [here](https://github.com/tatsu-lab/stanford_alpaca), and then put it at [[./data/IT_data/T+X-T_data/alpaca/]](data/IT_data/T+X-T_data/alpaca/).
-    - `VideoChat`, download the ***video instruction data*** [here](https://github.com/OpenGVLab/InternVideo/tree/main/Data/instruction_data), and then put it at [[./data/IT_data/T+X-T_data/videochat/]](data/IT_data/T+X-T_data/videochat/).
+For the testing set, you can also download from 
+
+After downloading the dataset, please put it under the fold 'data/IT_data_ins/T+X-T_data/'
     
     Side note：After downloading dataset, please run `preprocess_dataset.py` to preprocess the dataset into a unified format.
 
