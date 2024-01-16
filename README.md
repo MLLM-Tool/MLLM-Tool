@@ -207,10 +207,10 @@ deepspeed --include localhost:0,1,2,3 --master_addr 127.0.0.1 --master_port 2845
     --model openllama_peft \
     --stage 1\
     --imagebind_ckpt_path ../pretrained_checkpoint/imagebind_ckpt/\
-    --llm_ckpt_path ../pretrained_checkpoint/vicuna_ckpt/7b_v0/\
+    --llm_ckpt_path ../pretrained_checkpoint/llm_ckpt/vicuna_7b/\
     --max_tgt_len 1024\
-    --save_path  ../ckpt/delta_ckpt/tool_lmm/7b_tiva_v0/\
-    --log_path ../ckpt/delta_ckpt/tool_lmm/7b_tiva_v0/log/
+    --save_path  ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/\
+    --log_path ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/log/
 ```
 where the key arguments are:
 - `--include`: `localhost:0` indicating the GPT cuda number `0` of deepspeed.
