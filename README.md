@@ -168,7 +168,7 @@ After downloading the dataset, please put it under the path [data/IT_data_ins/T+
 
 First of all, please refer to the base configuration file [[./code/config/base.yaml]](./code/config/base.yaml) for the basic system setting of overall modules.
 
-Then, the training of Tool_LMM starts with this script:
+Then, the training of Tool_LMM starts with this script(We take the example of using Vicuna7B as backbone):
 ```angular2html
 cd ./code
 bash scripts/train.sh
@@ -180,18 +180,22 @@ deepspeed --include localhost:0,1,2,3 --master_addr 127.0.0.1 --master_port 2845
     --stage 1\
     --imagebind_ckpt_path ../pretrained_checkpoint/imagebind_ckpt/\
     --llm_ckpt_path ../pretrained_checkpoint/LLM_ckpt/vicuna_7b/\
-    --max_tgt_len 1024\
+    --max_tgt_len 512\
+    --epochs 5\
     --save_path  ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/\
-    --log_path ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/log/
+    --log_path ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/log/\
+    --version v1
 ```
 where the key arguments are:
 - `--include`: `localhost:0` indicating the GPT cuda number `0` of deepspeed.
 - `--stage`: training stage.
 - `--imagebind_ckpt_path`: the directory which saves the pretrained imagebind weights.
-- `--llm_ckpt_path`: the directory which saves the pretrained large language model weights.
+- `--llm_ckpt_path`: the directory which saves the pretrained large language model weights. You can replace the Vicuna-7B to any other LLMs.
 - `--max_tgt_len`: the maximum sequence length.
+- `--epochs`: the number of training epochs.
 - `--save_path`: the directory which saves the trained delta weights. This directory will be automatically created.
 - `--log_path`: the directory which saves the log file.
+- `--version`: the name of the checkpoint file.
 
 
 
