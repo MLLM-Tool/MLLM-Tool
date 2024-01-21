@@ -1,13 +1,12 @@
 # Tool_LMM:A Large Multi-Modal Model for Tool Learning
-[Chenyu Wang], [Weixin Luo], [Lin Ma], [Shenghua Gao].
+Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), Qianyu Chen, Haonan Mai, Jindi Guo, [Sixun Dong](https://github.com/Ironieser), Xiaohua (Michael) Xuan, [Zhengxin Li](https://scholar.google.com/citations?user=7wslizAAAAAJ&hl=en), [Lin Ma](https://forestlinma.com/), [Shenghua Gao](https://svip-lab.github.io/).
 
-
-**Tool_LMM, School of Information Science and Technology, ShanghaiTech University**
+**School of Information Science and Technology, ShanghaiTech University**
 
 -----
 
 
-This repository hosts the code, data and model weight of **Tool_LMM**, the first end-to-end tool agent LMM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
+This repository hosts the code, data and model weight of **Tool_LMM**, the first tool agent LMM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
 
 
 -----------
@@ -27,6 +26,10 @@ This repository hosts the code, data and model weight of **Tool_LMM**, the first
 
 
 -----------
+
+## Brief Introduction
+Recently, the astonishing performance of large language models (LLMs) in natural language comprehension and generation tasks triggered lots of exploration of using them as central controllers to build agent systems. Multiple studies focus on bridging the LLMs to external tools to extend the application scenarios. However, the current LLMs' perceiving tool-use ability is limited to a single text query, which may result in ambiguity in understanding the users' real intentions. LLMs are expected to eliminate that by perceiving the visual- or auditory-grounded instructions' information. Therefore, in this paper, we propose ToolLMM, a system incorporating open-source LLMs and multimodal encoders so that the learnt LLMs can be conscious of multi-modal input instruction and then select the functionmatched tool correctly. To facilitate the evaluation of the model’s capability, we collect a dataset featured by consisting of multi-modal input tools from HuggingFace. Another important feature of our dataset is that our dataset also contains multiple potential choices for the same instruction due to the existence of identical functions and synonymous functions, which provides more potential solutions for the same query. The experiments reveal that our LMM is capable of recommending appropriate tools for multi-modal instructions. 
+
 
 <span id='Usage'/>
 
@@ -130,9 +133,6 @@ conda install -c conda-forge pycocotools
 
 ### 3. Training/Adapting Your Own Tool-LMM 
 
-####
-
-
 <span id='Prepare Pre-trained Checkpoint'/>
 
 #### 3.1. Preparing Pre-trained Checkpoint  <a href='#all_catelogue'>[Back to Top]</a>
@@ -226,7 +226,7 @@ The checkpoints should be stored under the path [code/ckpt/]
 
 #### 4.2. Inference <a href='#all_catelogue'>[Back to Top]</a>
 
-The inference of Tool_LMM starts with this script:
+The inference of Tool_LMM starts with this script(Again, we take the example of Vicuna-7B as backbone):
 ```angular2html
 python inference.py
 ```
