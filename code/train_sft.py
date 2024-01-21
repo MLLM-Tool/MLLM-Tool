@@ -13,7 +13,7 @@ def parser_args():
     # model configurations
     # parser.add_argument('--image_root_path', type=str) # the directory that stores all images
     parser.add_argument('--imagebind_ckpt_path', type=str) # the path that stores the imagebind checkpoint
-    parser.add_argument('--vicuna_ckpt_path', type=str) # the path that stores the vicuna checkpoint
+    parser.add_argument('--llm_ckpt_path', type=str) # the path that stores the llm checkpoint
     parser.add_argument('--delta_ckpt_path', type=str) # the delta parameters trained in stage 1
     parser.add_argument('--max_tgt_len', type=int) # the maximum sequence length
     parser.add_argument('--stage', type=int) # the maximum sequence length

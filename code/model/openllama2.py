@@ -81,7 +81,7 @@ class OpenLLAMAPEFTModel(nn.Module):
         self.args = args
 
         imagebind_ckpt_path = args['imagebind_ckpt_path']
-        vicuna_ckpt_path = args['vicuna_ckpt_path']
+        llm_ckpt_path = args['llm_ckpt_path']
         max_tgt_len = args['max_tgt_len']
         self.max_tgt_len = max_tgt_len
         self.device = torch.cuda.current_device()
@@ -97,7 +97,7 @@ class OpenLLAMAPEFTModel(nn.Module):
         self.visual_encoder.eval()
         print ('Visual encoder initialized.')
 
-        print (f'Initializing language decoder from {vicuna_ckpt_path} ...')
+        print (f'Initializing language decoder from {llm_ckpt_path} ...')
         # add the lora module
         peft_config = LoraConfig(
             task_type=TaskType.CAUSAL_LM, 
@@ -107,11 +107,11 @@ class OpenLLAMAPEFTModel(nn.Module):
             lora_dropout=self.args['lora_dropout'],
             target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']
         )
-        self.llama_model = LlamaForCausalLM.from_pretrained(vicuna_ckpt_path)
+        self.llama_model = LlamaForCausalLM.from_pretrained(llm_ckpt_path)
         self.llama_model = get_peft_model(self.llama_model, peft_config)
         self.llama_model.print_trainable_parameters()
 
-        self.llama_tokenizer = LlamaTokenizer.from_pretrained(vicuna_ckpt_path, use_fast=False)
+        self.llama_tokenizer = LlamaTokenizer.from_pretrained(llm_ckpt_path, use_fast=False)
         self.llama_tokenizer.pad_token = self.llama_tokenizer.eos_token
         self.llama_tokenizer.padding_side = "right"
         print ('Language decoder initialized.')
