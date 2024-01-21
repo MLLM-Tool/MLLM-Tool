@@ -1,10 +1,8 @@
 import os
-from model.openllama2 import OpenLLAMAPEFTModel
+from model.openllama import OpenLLAMAPEFTModel
 import torch
 import json
 from config import *
-# import matplotlib.pyplot as plt
-# from diffusers.utils import export_to_video
 import scipy
 from tqdm import tqdm
 
@@ -17,7 +15,6 @@ def predict(
         max_tgt_len=200,
         top_p=10.0,
         temperature=0.1,
-        # history=None,
         modality_cache=None,
         stops_id=None,
 ):
@@ -41,16 +38,24 @@ def predict(
 
     if image_path != "":
         image_path = os.path.join(image_base_path, image_path)
+        # prompt_text += f'<Image>{image_path}</Image> '
         mm_path = image_path
         modality = 'Image'
     if audio_path != "":
         audio_path = os.path.join(audio_base_path,audio_path)
+        # prompt_text += f'<Audio>{audio_path}</Audio> '
         mm_path = audio_path
         modality = 'Audio'
     if video_path != "":
         video_path = os.path.join(video_base_path,video_path)
+        # prompt_text += f'<Video>{video_path}</Video> '
         mm_path = video_path
         modality = 'Video'
+
+
+    # prompt_text += f' {input}'
+
+    # prompt_text += "\n The answer should follow the format: {<<<api_name>>>:  $api_name}. "
 
     print('prompt_text: ', input)
     print('image_path: ', image_path)
@@ -72,7 +77,6 @@ def predict(
         'modality': modality,
         'mm_path' : mm_path,
         'query': f' {input}'
-
     })
     return response
 
@@ -100,7 +104,8 @@ def run_eval(args, question_jsons):
         audio_path = ques_json['audio_path']
         video_path = ques_json['video_path']
         prompt = ques_json["conversations"][0]["value"]
-
+        
+        
         output = predict(input=prompt, image_path=image_path,
                      audio_path=audio_path, video_path=video_path,
                      max_tgt_len=max_tgt_length, top_p=top_p,
@@ -110,6 +115,7 @@ def run_eval(args, question_jsons):
                      )
         print(output)
         output = output.split("\n")[0]
+
         ans_jsons.append(
             {
                 "question_id": idx,
@@ -120,8 +126,10 @@ def run_eval(args, question_jsons):
 
     # Write output to file
     with open(args['answer_file'], "w") as ans_file:
-        for line in ans_jsons:
-            ans_file.write(json.dumps(line) + "\n")
+        ans_file.write("[")
+        for line in ans_jsons[:-1]:
+            ans_file.write(json.dumps(line) + ",\n")
+        ans_file.write(json.dumps(ans_jsons[-1]) + "]")
 
     return ans_jsons
 
@@ -132,27 +140,27 @@ if __name__ == '__main__':
 
     g_cuda = torch.Generator(device='cuda').manual_seed(1337)
     args = {'model': 'openllama_peft',
-            'toollmm_ckpt_path': './ckpt/toollmm_llama_7b_v0_peft/TIVA_1_8_11141830/',
+            'toollmm_ckpt_path': './ckpt/toollmm_vicuna_7b/v1',
             'imagebind_ckpt_path': '../pretrained_checkpoint/imagebind_ckpt/',
-            'llm_ckpt_path': '../pretrained_checkpoint/LLM_ckpt/',
+            'llm_ckpt_path': '../pretrained_checkpoint/LLM_ckpt/vicuna-7b/',
             'max_tgt_len': 1024,
+            'max_length': 512,
             'stage': 3,
             'root_dir': '../',
             'mode': 'validation',
+            'epochs': 5,
             'question_file': '../data/IT_data_ins/T+X-T_data/combined_data.json',
-            'answer_file': '../data/eval_llama_7b_answer_all.json'
+            'answer_file': '../data/inference/eval_vicuna_7b_answer.json'
             }
     args.update(load_config(args))
 
     model = OpenLLAMAPEFTModel(**args)
     delta_ckpt = torch.load(os.path.join(args['toollmm_ckpt_path'], 'pytorch_model_0.pt'), map_location=torch.device('cuda'))
-    # print(delta_ckpt)
     model.load_state_dict(delta_ckpt, strict=False)
     model = model.eval().half().cuda()
 
-
     """Override Chatbot.postprocess"""
-    max_tgt_length = 150
+    max_tgt_length = 512
     top_p = 1.0
     temperature = 0.4
     modality_cache = None

@@ -17,6 +17,8 @@ def parser_args():
     parser.add_argument('--delta_ckpt_path', type=str) # the delta parameters trained in stage 1
     parser.add_argument('--max_tgt_len', type=int) # the maximum sequence length
     parser.add_argument('--stage', type=int) # the maximum sequence length
+    parser.add_argument('--epochs', type=int) # the number of training epochs
+    parser.add_argument('--version', type=str) # the name of ckpt file
     return parser.parse_args()
 
 def initialize_distributed(args):

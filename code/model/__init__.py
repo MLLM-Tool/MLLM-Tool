@@ -1,5 +1,5 @@
 from .agent import DeepSpeedAgent
-from .openllama2 import OpenLLAMAPEFTModel
+from .openllama import OpenLLAMAPEFTModel
 
 def load_model(args):
     agent_name = args['models'][args['model']]['agent_name']

@@ -14,7 +14,7 @@ class DeepSpeedAgent:
         if args['stage'] == 2:
             self.load_stage_1_parameters(args["delta_ckpt_path"])
             print(f'[!] load stage 1 checkpoint from {args["delta_ckpt_path"]}')
-
+        self.save_name = args['version']
         # load config parameters of deepspeed
         ds_params = json.load(open(self.args['ds_config_path']))
         ds_params['scheduler']['params']['total_num_steps'] = self.args['total_steps']
@@ -63,7 +63,7 @@ class DeepSpeedAgent:
             if v.requires_grad:
                 checkpoint[k] = v.cpu()
 
-        model_save_path = os.path.join(path, "TIVA_1_8_11141830")
+        model_save_path = os.path.join(path, self.save_name)
         os.makedirs(model_save_path, exist_ok=True)
         model_name = "pytorch_model_"+str(current_step)+".pt"
         torch.save(checkpoint, f'{model_save_path}/{model_name}')

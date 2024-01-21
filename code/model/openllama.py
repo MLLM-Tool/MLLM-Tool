@@ -18,7 +18,6 @@ class StoppingCriteriaSub(StoppingCriteria):
 
     def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor):
         stop_count = 0
-        # import pdb;pdb.set_trace()
         for stop in self.stops:
             stop_count = (torch.tensor(stop).cuda() == input_ids[0]).sum().item()
         if stop_count >= self.ENCOUNTERS:
@@ -86,8 +85,8 @@ class OpenLLAMAPEFTModel(nn.Module):
         self.max_tgt_len = max_tgt_len
         self.device = torch.cuda.current_device()
         stage = args['stage']
+        epochs = args['epochs']
 
-        print('args max_length', args['max_length'])
         print (f'Initializing visual encoder from {imagebind_ckpt_path} ...')
         self.visual_encoder, self.visual_hidden_size = \
         imagebind_model.imagebind_huge(pretrained=True, store_path=imagebind_ckpt_path)
@@ -107,6 +106,7 @@ class OpenLLAMAPEFTModel(nn.Module):
             lora_dropout=self.args['lora_dropout'],
             target_modules=['q_proj', 'k_proj', 'v_proj', 'o_proj']
         )
+        # import pdb;pdb.set_trace()
         self.llama_model = LlamaForCausalLM.from_pretrained(llm_ckpt_path)
         self.llama_model = get_peft_model(self.llama_model, peft_config)
         self.llama_model.print_trainable_parameters()
