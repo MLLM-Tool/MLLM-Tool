@@ -271,7 +271,7 @@ Thanks for their wonderful works.
 
 
 ## License Notices
-This repository is under [GPL v3 License](LICENSE.txt).
+This repository is under GPL v3 License.
 Tool_LMM is a research project intended for non-commercial use only. 
 One must NOT use the code of Tool_LMM for any illegal, harmful, violent, racist, or sexual purposes. 
 One is strictly prohibited from engaging in any activity that will potentially violate these guidelines.
