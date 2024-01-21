@@ -205,7 +205,7 @@ The whole Tool_LMM training involves:
 
   Just run the above `train.sh` script.
 
-  Also refer to the running config file [[./code/config/openllama_peft.yaml]](./code/config/openllama_peft.yaml) and deepspeed config file [[./code/dsconfig/openllama_peft_stage_1.yaml]](./code/dsconfig/openllama_peft_stage_1.yaml) for detailed configurations. Pay attention to the *train_batch_size*, *train_micro_batch_size_per_gpu*, *gradient_accumulation_steps*, you need to adjust the value to match your computing resources. In this work, we set 64,4,4 for 7B models and 32,1,8 for 13B models respectively.
+  Also refer to the running config file [[./code/config/openllama_peft.yaml]](./code/config/openllama_peft.yaml) and deepspeed config file [[./code/dsconfig/openllama_peft_stage_1.yaml]](./code/dsconfig/openllama_peft_stage_1.yaml) for detailed configurations. Pay attention to the *train_batch_size*, *train_micro_batch_size_per_gpu*, *gradient_accumulation_steps* in the deepspeed config file [[./code/dsconfig/openllama_peft_stage_1.yaml]](./code/dsconfig/openllama_peft_stage_1.yaml), you need to adjust the value to match your computing resources. In this work, we set 64, 4, 4 for 7B models and 32, 1, 8 for 13B models respectively.
 
 
 Note: We extract the embedding of all the video data and store [here](https://drive.google.com/drive/folders/1Hn9uQTouH2DN4nZDY_upVA0-mjrWihh4?usp=drive_link), in case there may exists some problems when getting the video embeddings.
