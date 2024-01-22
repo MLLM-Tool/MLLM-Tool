@@ -4,7 +4,7 @@ Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), Qianyu Chen, Haonan Mai, 
 **School of Information Science and Technology, ShanghaiTech University**
 
 -----
-<a href='https://arxiv.org/pdf/2309.05519'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a> 
+<a href='https://arxiv.org/pdf/2401.10727'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a>  
 
 This repository hosts the code, data and model weight of **Tool_LMM**, the first tool agent LMM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
 
@@ -248,7 +248,12 @@ For any questions or feedback, feel free to contact [Chenyu Wang](wangchy8@shang
 
  If you find Tool_LMM useful in your research or applications, please kindly cite:
 ```
-
+@article{wang2024toollmm,
+  title={Tool-LMM: A Large Multi-Modal Model for Tool Agent Learning},
+  author={Wang, Chenyu and Luo, Weixin and Chen, Qianyu and Mai, Haonan and Guo, Jindi and Dong, Sixun and Xuan, Xiaohua (Michael) and Li, Zhengxin and Ma, Lin and Gao, Shenghua},
+  journal={arXiv preprint arXiv:2401.10727},
+  year={2024}
+}
 ```
 
 
