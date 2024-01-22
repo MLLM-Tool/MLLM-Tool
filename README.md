@@ -1,7 +1,9 @@
-# Tool_LMM:A Large Multi-Modal Model for Tool Learning
+# Tool-LMM:A Large Multi-Modal Model for Tool Learning
 Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), Qianyu Chen, Haonan Mai, Jindi Guo, [Sixun Dong](https://github.com/Ironieser), Xiaohua (Michael) Xuan, [Zhengxin Li](https://scholar.google.com/citations?user=7wslizAAAAAJ&hl=en), [Lin Ma](https://forestlinma.com/), [Shenghua Gao](https://svip-lab.github.io/).
 
 **School of Information Science and Technology, ShanghaiTech University**
+**Meituan**
+
 
 -----
 <a href='https://arxiv.org/pdf/2401.10727'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a>  
