@@ -2,6 +2,7 @@
 Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), Qianyu Chen, Haonan Mai, Jindi Guo, [Sixun Dong](https://github.com/Ironieser), Xiaohua (Michael) Xuan, [Zhengxin Li](https://scholar.google.com/citations?user=7wslizAAAAAJ&hl=en), [Lin Ma](https://forestlinma.com/), [Shenghua Gao](https://svip-lab.github.io/).
 
 **School of Information Science and Technology, ShanghaiTech University**
+
 **Meituan**
 
 
