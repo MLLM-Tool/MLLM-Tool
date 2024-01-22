@@ -1,5 +1,5 @@
 # Tool-LMM:A Large Multi-Modal Model for Tool Learning
-Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), Qianyu Chen, Haonan Mai, Jindi Guo, [Sixun Dong](https://github.com/Ironieser), Xiaohua (Michael) Xuan, [Zhengxin Li](https://scholar.google.com/citations?user=7wslizAAAAAJ&hl=en), [Lin Ma](https://forestlinma.com/), [Shenghua Gao](https://svip-lab.github.io/).
+Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), Qianyu Chen(https://github.com/Mitcheese), Haonan Mai(https://github.com/mai-hn), Jindi Guo(https://github.com/1259666087), [Sixun Dong](https://ironieser.github.io/), Xiaohua (Michael) Xuan, [Zhengxin Li](https://scholar.google.com/citations?user=7wslizAAAAAJ&hl=en), [Lin Ma](https://forestlinma.com/), [Shenghua Gao](https://svip-lab.github.io/).
 
 **ShanghaiTech University && Meituan**
 
@@ -276,7 +276,7 @@ Thanks for their wonderful work.
 
 
 ## License Notices
-This repository is under GPL v3 License.
+This repository is under MIT License.
 Tool-LMM is a research project intended for non-commercial use only. 
 One must NOT use the code of Tool-LMM for any illegal, harmful, violent, racist, or sexual purposes. 
 One is strictly prohibited from engaging in any activity that will potentially violate these guidelines.
