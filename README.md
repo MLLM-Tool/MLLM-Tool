@@ -6,21 +6,21 @@ Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), Qianyu Chen, Haonan Mai, 
 -----
 <a href='https://arxiv.org/pdf/2401.10727'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a>  
 
-This repository hosts the code, data and model weight of **Tool_LMM**, the first tool agent LMM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
+This repository hosts the code, data and model weight of **Tool-LMM**, the first tool agent LMM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
 
 
 -----------
 
 ## 🎉 News 
 
-- [x] [2024.01.16] 🚀🚀 Release the code of Tool_LMM.
-- [x] [2024.01.16] 🔨🧩 Release the Tool_MMBench dataset.
-- [x] [2024.01.16] 📢📢 Release the checkpoint of Tool_LMM in Vicuna-7B, Vicuna-13B, Llama-7B, Llama-13B, Llama2-7B, Llama2-13B, Llama2Chat-7B, Llama2Chat-13B.
+- [x] [2024.01.16] 🚀🚀 Release the code of Tool-LMM.
+- [x] [2024.01.16] 🔨🧩 Release the Tool-MMBench dataset.
+- [x] [2024.01.16] 📢📢 Release the checkpoint of Tool-LMM in Vicuna-7B, Vicuna-13B, Llama-7B, Llama-13B, Llama2-7B, Llama2-13B, Llama2Chat-7B, Llama2Chat-13B.
 
 ## 👉 TODO 
-- [ ] Collect more data and release v2 dataset.
-- [ ] Update Tool_LMM in more types&sizes of LLMs.
-- [ ] Empower Tool_LMM with retrieving open-set tools.
+- [ ] Collect more data and release the v2 dataset.
+- [ ] Update Tool-LMM in more types&sizes of LLMs.
+- [ ] Empower Tool-LMM with retrieving open-set tools.
 - [ ] Release Demo and Interactive Website.
 - [ ] ...
 
@@ -28,7 +28,7 @@ This repository hosts the code, data and model weight of **Tool_LMM**, the first
 -----------
 
 ## Brief Introduction
-Recently, the astonishing performance of large language models (LLMs) in natural language comprehension and generation tasks triggered lots of exploration of using them as central controllers to build agent systems. Multiple studies focus on bridging the LLMs to external tools to extend the application scenarios. However, the current LLMs' perceiving tool-use ability is limited to a single text query, which may result in ambiguity in understanding the users' real intentions. LLMs are expected to eliminate that by perceiving the visual- or auditory-grounded instructions' information. Therefore, in this paper, we propose ToolLMM, a system incorporating open-source LLMs and multimodal encoders so that the learnt LLMs can be conscious of multi-modal input instruction and then select the functionmatched tool correctly. To facilitate the evaluation of the model’s capability, we collect a dataset featured by consisting of multi-modal input tools from HuggingFace. Another important feature of our dataset is that our dataset also contains multiple potential choices for the same instruction due to the existence of identical functions and synonymous functions, which provides more potential solutions for the same query. The experiments reveal that our LMM is capable of recommending appropriate tools for multi-modal instructions. 
+Recently, the astonishing performance of large language models (LLMs) in natural language comprehension and generation tasks triggered lots of exploration of using them as central controllers to build agent systems. Multiple studies focus on bridging the LLMs to external tools to extend the application scenarios. However, the current LLMs' perceiving tool-use ability is limited to a single text query, which may result in ambiguity in understanding the users' real intentions. LLMs are expected to eliminate that by perceiving the visual- or auditory-grounded instructions' information. Therefore, in this paper, we propose ToolLMM, a system incorporating open-source LLMs and multimodal encoders so that the learned LLMs can be conscious of multi-modal input instruction and then select the function-matched tool correctly. To facilitate the evaluation of the model’s capability, we collect a dataset featured by consisting of multi-modal input tools from HuggingFace. Another important feature of our dataset is that our dataset also contains multiple potential choices for the same instruction due to the existence of identical functions and synonymous functions, which provides more potential solutions for the same query. The experiments reveal that our LMM is capable of recommending appropriate tools for multi-modal instructions. 
 
 
 <span id='Usage'/>
@@ -41,11 +41,11 @@ Recently, the astonishing performance of large language models (LLMs) in natural
 ### Table of Contents:
 * <a href='#Code Structure'>1. Code Structure</a>
 * <a href='#Environment Preparation'>2. Environment Preparation </a>
-* <a href='#Training on Your Own'>3. Training/Adapting Tool_LMM on Your Own</a>
+* <a href='#Training on Your Own'>3. Training/Adapting Tool-LMM on Your Own</a>
   * <a href='#Prepare Pre-trained Checkpoint'>3.1. Preparing Pre-trained Checkpoint</a>
   * <a href='#Prepare Dataset'>3.2. Preparing Dataset </a>
-  * <a href='#Train Tool_LMM'>3.3. Training Tool_LMM</a>
-* <a href='#Run Tool_LMM System'>4. Running Tool_LMM System</a>
+  * <a href='#Train Tool-LMM'>3.3. Training Tool-LMM</a>
+* <a href='#Run Tool-LMM System'>4. Running Tool-LMM System</a>
   * <a href='#Prepare checkpoints'>4.1. Preparing checkpoints</a>
   * <a href='#Inference'>4.2. Inference</a>
 
@@ -80,7 +80,7 @@ Recently, the astonishing performance of large language models (LLMs) in natural
 │   │   ├──_utils.py
 │   │   ├── catalog.py                        # the catalog information of the dataset
 │   │   ├── T+X-T_instruction_dataset.py      # process and load text+x-to-text instruction dataset
-│   │   └── concat_dataset.py                 # process and load multiple dataset
+│   │   └── concat_dataset.py                 # process and load multiple datasets
 │   ├── model                     
 │   │   ├── ImageBind                         # the code from ImageBind Model
 │   │   ├──__init__ .py 
@@ -88,7 +88,7 @@ Recently, the astonishing performance of large language models (LLMs) in natural
 │   │   ├── agent.py
 │   │   └── modeling_llama.py
 │   ├── scripts
-│   │   └── train.sh                          # training Tool_LMM script
+│   │   └── train.sh                          # training Tool-LMM script
 │   ├── header.py
 │   ├── train_sft.py                              # training
 │   └── inference.py                          # inference
@@ -164,11 +164,11 @@ After downloading the dataset, please put it under the path [data/IT_data_ins/T+
     
 <span id='Train Tool_LMM'/>
 
-#### 3.3. Training Tool_LMM  <a href='#all_catelogue'>[Back to Top]</a>
+#### 3.3. Training Tool-LMM  <a href='#all_catelogue'>[Back to Top]</a>
 
 First of all, please refer to the base configuration file [[./code/config/base.yaml]](./code/config/base.yaml) for the basic system setting of overall modules.
 
-Then, the training of Tool_LMM starts with this script(We take the example of using Vicuna-7B as backbone and use 4 GPUs):
+Then, the training of Tool-LMM starts with this script(We take the example of using Vicuna-7B as the backbone and use 4 GPUs):
 ```angular2html
 cd ./code
 bash scripts/train.sh
@@ -199,9 +199,9 @@ where the key arguments are:
 
 
 
-The whole Tool_LMM training involves:
+The whole Tool-LMM training involves:
 
-- **Step-1**: Instruction Tuning. This stage instruction-tune 1) the ***LLM*** via LoRA, 2) ***input projection layer*** on the Tool_MMBench dataset.
+- **Step-1**: Instruction Tuning. This stage instruction-tune 1) the ***LLM*** via LoRA, 2) ***input projection layer*** on the Tool-MMBench dataset.
 
   Just run the above `train.sh` script.
 
@@ -210,9 +210,9 @@ The whole Tool_LMM training involves:
 
 Note: We extract the embedding of all the video data and store [here](https://drive.google.com/drive/folders/1Hn9uQTouH2DN4nZDY_upVA0-mjrWihh4?usp=drive_link), in case there may exists some problems when getting the video embeddings.
 
-<span id='Run Tool_LMM System'/>
+<span id='Run Tool-LMM System'/>
 
-## 4. Evaluating your own Tool_LMM system
+## 4. Evaluating your own Tool-LMM system
 
 <span id='Prepare checkpoints'/>
 
@@ -226,7 +226,7 @@ The checkpoints should be stored under the path [code/ckpt/]
 
 #### 4.2. Inference <a href='#all_catelogue'>[Back to Top]</a>
 
-The inference of Tool_LMM starts with this script(Again, we take the example of Vicuna-7B as backbone):
+The inference of Tool-LMM starts with this script(Again, we take the example of Vicuna-7B as backbone):
 ```angular2html
 python inference.py
 ```
@@ -246,7 +246,7 @@ For any questions or feedback, feel free to contact [Chenyu Wang](wangchy8@shang
 
 ## Citation
 
- If you find Tool_LMM useful in your research or applications, please kindly cite:
+ If you find Tool-LMM useful in your research or applications, please kindly cite:
 ```
 @article{wang2024toollmm,
   title={Tool-LMM: A Large Multi-Modal Model for Tool Agent Learning},
@@ -266,18 +266,18 @@ You may refer to related work that serves as foundations for our framework and c
 [Llama2](https://github.com/facebookresearch/llama),
 [Llama2-Chat](https://github.com/facebookresearch/llama),
 [ImageBind](https://github.com/facebookresearch/ImageBind), 
-We also partially draw inspirations from 
+We also partially draw inspiration from 
 [PandaGPT](https://github.com/yxuansu/PandaGPT), 
 [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4),
 [LLaVA](https://github.com/haotian-liu/LLaVA),
 [NeXT-GPT](https://github.com/NExT-GPT/NExT-GPT).
-Thanks for their wonderful works.
+Thanks for their wonderful work.
 
 
 
 ## License Notices
 This repository is under GPL v3 License.
-Tool_LMM is a research project intended for non-commercial use only. 
-One must NOT use the code of Tool_LMM for any illegal, harmful, violent, racist, or sexual purposes. 
+Tool-LMM is a research project intended for non-commercial use only. 
+One must NOT use the code of Tool-LMM for any illegal, harmful, violent, racist, or sexual purposes. 
 One is strictly prohibited from engaging in any activity that will potentially violate these guidelines.
 Any potential commercial use of this code should be approved by the authors.
