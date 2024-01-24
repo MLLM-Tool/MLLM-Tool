@@ -1,4 +1,4 @@
-# Tool-LMM:A Large Multi-Modal Model for Tool Learning
+# MLLM-Tool: A Multimodal Large Language Model For Tool Agent Learning
 Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), [Qianyu Chen](https://github.com/Mitcheese), [Haonan Mai](https://github.com/mai-hn), [Jindi Guo](https://github.com/1259666087), [Sixun Dong](https://ironieser.github.io/), Xiaohua (Michael) Xuan, [Zhengxin Li](https://scholar.google.com/citations?user=7wslizAAAAAJ&hl=en), [Lin Ma](https://forestlinma.com/), [Shenghua Gao](https://svip-lab.github.io/).
 
 **ShanghaiTech University && Meituan**
@@ -6,21 +6,21 @@ Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), [Qianyu Chen](https://git
 -----
 <a href='https://arxiv.org/pdf/2401.10727'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a>  
 
-This repository hosts the code, data and model weight of **Tool-LMM**, the first tool agent LMM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
+This repository hosts the code, data and model weight of **MLLM-Tool**, the first tool agent MLLM that has the ability to perceive visual- and auditory- input information and recommend appropriate tools for multi-modal instructions.
 
 
 -----------
 
 ## 🎉 News 
 
-- [x] [2024.01.16] 🚀🚀 Release the code of Tool-LMM.
+- [x] [2024.01.16] 🚀🚀 Release the code of MLLM-Tool.
 - [x] [2024.01.16] 🔨🧩 Release the Tool-MMBench dataset.
-- [x] [2024.01.16] 📢📢 Release the checkpoint of Tool-LMM in Vicuna-7B, Vicuna-13B, Llama-7B, Llama-13B, Llama2-7B, Llama2-13B, Llama2Chat-7B, Llama2Chat-13B.
+- [x] [2024.01.16] 📢📢 Release the checkpoint of MLLM-Tool in Vicuna-7B, Vicuna-13B, Llama-7B, Llama-13B, Llama2-7B, Llama2-13B, Llama2Chat-7B, Llama2Chat-13B.
 
 ## 👉 TODO 
 - [ ] Collect more data and release the v2 dataset.
-- [ ] Update Tool-LMM in more types&sizes of LLMs.
-- [ ] Empower Tool-LMM with retrieving open-set tools.
+- [ ] Update MLLM-Tool in more types&sizes of LLMs.
+- [ ] Empower MLLM-Tool with retrieving open-set tools.
 - [ ] Release Demo and Interactive Website.
 - [ ] ...
 
@@ -41,11 +41,11 @@ Recently, the astonishing performance of large language models (LLMs) in natural
 ### Table of Contents:
 * <a href='#Code Structure'>1. Code Structure</a>
 * <a href='#Environment Preparation'>2. Environment Preparation </a>
-* <a href='#Training on Your Own'>3. Training/Adapting Tool-LMM on Your Own</a>
+* <a href='#Training on Your Own'>3. Training/Adapting MLLM-Tool on Your Own</a>
   * <a href='#Prepare Pre-trained Checkpoint'>3.1. Preparing Pre-trained Checkpoint</a>
   * <a href='#Prepare Dataset'>3.2. Preparing Dataset </a>
-  * <a href='#Train Tool-LMM'>3.3. Training Tool-LMM</a>
-* <a href='#Run Tool-LMM System'>4. Running Tool-LMM System</a>
+  * <a href='#Train MLLM-Tool'>3.3. Training MLLM-Tool</a>
+* <a href='#Run MLLM-Tool System'>4. Running MLLM-Tool System</a>
   * <a href='#Prepare checkpoints'>4.1. Preparing checkpoints</a>
   * <a href='#Inference'>4.2. Inference</a>
 
@@ -88,7 +88,7 @@ Recently, the astonishing performance of large language models (LLMs) in natural
 │   │   ├── agent.py
 │   │   └── modeling_llama.py
 │   ├── scripts
-│   │   └── train.sh                          # training Tool-LMM script
+│   │   └── train.sh                          # training MLLM-Tool script
 │   ├── header.py
 │   ├── train_sft.py                              # training
 │   └── inference.py                          # inference
@@ -120,7 +120,7 @@ conda activate toollmm
 # CUDA 11.7
 pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu117
 
-git clone https://github.com/Tool-LMM/Tool-LMM.git
+git clone https://github.com/MLLM-Tool/MLLM-Tool.git
 cd toollmm
 
 pip install -r requirements.txt *
@@ -131,7 +131,7 @@ conda install -c conda-forge pycocotools
 
 <span id='Training on Your Own'/>
 
-### 3. Training/Adapting Your Own Tool-LMM 
+### 3. Training/Adapting Your Own MLLM-Tool 
 
 <span id='Prepare Pre-trained Checkpoint'/>
 
@@ -164,11 +164,11 @@ After downloading the dataset, please put it under the path [data/IT_data_ins/T+
     
 <span id='Train Tool_LMM'/>
 
-#### 3.3. Training Tool-LMM  <a href='#all_catelogue'>[Back to Top]</a>
+#### 3.3. Training MLLM-Tool  <a href='#all_catelogue'>[Back to Top]</a>
 
 First of all, please refer to the base configuration file [[./code/config/base.yaml]](./code/config/base.yaml) for the basic system setting of overall modules.
 
-Then, the training of Tool-LMM starts with this script(We take the example of using Vicuna-7B as the backbone and use 4 GPUs):
+Then, the training of MLLM-Tool starts with this script(We take the example of using Vicuna-7B as the backbone and use 4 GPUs):
 ```angular2html
 cd ./code
 bash scripts/train.sh
@@ -199,7 +199,7 @@ where the key arguments are:
 
 
 
-The whole Tool-LMM training involves:
+The whole MLLM-Tool training involves:
 
 - **Step-1**: Instruction Tuning. This stage instruction-tune 1) the ***LLM*** via LoRA, 2) ***input projection layer*** on the Tool-MMBench dataset.
 
@@ -210,9 +210,9 @@ The whole Tool-LMM training involves:
 
 Note: We extract the embedding of all the video data and store [here](https://drive.google.com/drive/folders/1Hn9uQTouH2DN4nZDY_upVA0-mjrWihh4?usp=drive_link), in case there may exists some problems when getting the video embeddings.
 
-<span id='Run Tool-LMM System'/>
+<span id='Run MLLM-Tool System'/>
 
-## 4. Evaluating your own Tool-LMM system
+## 4. Evaluating your own MLLM-Tool system
 
 <span id='Prepare checkpoints'/>
 
@@ -226,7 +226,7 @@ The checkpoints should be stored under the path [code/ckpt/]
 
 #### 4.2. Inference <a href='#all_catelogue'>[Back to Top]</a>
 
-The inference of Tool-LMM starts with this script(Again, we take the example of Vicuna-7B as backbone):
+The inference of MLLM-Tool starts with this script(Again, we take the example of Vicuna-7B as backbone):
 ```angular2html
 python inference.py
 ```
@@ -246,11 +246,11 @@ For any questions or feedback, feel free to contact [Chenyu Wang](wangchy8@shang
 
 ## Citation
 
- If you find Tool-LMM useful in your research or applications, please kindly cite:
+ If you find MLLM-Tool useful in your research or applications, please kindly cite:
 ```
-@article{wang2024toollmm,
-  title={Tool-LMM: A Large Multi-Modal Model for Tool Agent Learning},
-  author={Wang, Chenyu and Luo, Weixin and Chen, Qianyu and Mai, Haonan and Guo, Jindi and Dong, Sixun and Xuan, Xiaohua (Michael) and Li, Zhengxin and Ma, Lin and Gao, Shenghua},
+@article{wang2024mllmtool,
+  title={MLLM-Tool: A Multimodal Large Language Model For Tool Agent Learning},
+  author={Chenyu Wang and Weixin Luo and Qianyu Chen and Haonan Mai and  Jindi Guo and Sixun Dong and Xiaohua (Michael) Xuan and Zhengxin  Li and Lin Ma and Shenghua Gao},
   journal={arXiv preprint arXiv:2401.10727},
   year={2024}
 }
@@ -277,7 +277,7 @@ Thanks for their wonderful work.
 
 ## License Notices
 This repository is under MIT License.
-Tool-LMM is a research project intended for non-commercial use only. 
-One must NOT use the code of Tool-LMM for any illegal, harmful, violent, racist, or sexual purposes. 
+MLLM-Tool is a research project intended for non-commercial use only. 
+One must NOT use the code of MLLM-Tool for any illegal, harmful, violent, racist, or sexual purposes. 
 One is strictly prohibited from engaging in any activity that will potentially violate these guidelines.
 Any potential commercial use of this code should be approved by the authors.
