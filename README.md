@@ -19,7 +19,7 @@ This repository hosts the code, data and model weight of **MLLM-Tool**, the firs
 
 ## 👉 TODO 
 - [ ] Collect more data and release the v2 dataset.
-- [ ] Update MLLM-Tool in more types&sizes of LLMs.
+- [ ] Update MLLM-Tool in more types & sizes of LLMs.
 - [ ] Empower MLLM-Tool with retrieving open-set tools.
 - [ ] Release Demo and Interactive Website.
 - [ ] ...
@@ -28,7 +28,7 @@ This repository hosts the code, data and model weight of **MLLM-Tool**, the firs
 -----------
 
 ## Brief Introduction
-Recently, the astonishing performance of large language models (LLMs) in natural language comprehension and generation tasks triggered lots of exploration of using them as central controllers to build agent systems. Multiple studies focus on bridging the LLMs to external tools to extend the application scenarios. However, the current LLMs' perceiving tool-use ability is limited to a single text query, which may result in ambiguity in understanding the users' real intentions. LLMs are expected to eliminate that by perceiving the visual- or auditory-grounded instructions' information. Therefore, in this paper, we propose ToolLMM, a system incorporating open-source LLMs and multimodal encoders so that the learned LLMs can be conscious of multi-modal input instruction and then select the function-matched tool correctly. To facilitate the evaluation of the model’s capability, we collect a dataset featured by consisting of multi-modal input tools from HuggingFace. Another important feature of our dataset is that our dataset also contains multiple potential choices for the same instruction due to the existence of identical functions and synonymous functions, which provides more potential solutions for the same query. The experiments reveal that our LMM is capable of recommending appropriate tools for multi-modal instructions. 
+Recently, the astonishing performance of large language models (LLMs) in natural language comprehension and generation tasks triggered lots of exploration of using them as central controllers to build agent systems. Multiple studies focus on bridging the LLMs to external tools to extend the application scenarios. However, the current LLMs' perceiving tool-use ability is limited to a single text query, which may result in ambiguity in understanding the users' real intentions. LLMs are expected to eliminate that by perceiving the visual- or auditory-grounded instructions' information. Therefore, in this paper, we propose MLLM-Tool, a system incorporating open-source LLMs and multimodal encoders so that the learned LLMs can be conscious of multi-modal input instruction and then select the function-matched tool correctly. To facilitate the evaluation of the model’s capability, we collect a dataset featured by consisting of multi-modal input tools from HuggingFace. Another important feature of our dataset is that our dataset also contains multiple potential choices for the same instruction due to the existence of identical functions and synonymous functions, which provides more potential solutions for the same query. The experiments reveal that our MLLM-Tool is capable of recommending appropriate tools for multi-modal instructions. 
 
 
 <span id='Usage'/>
@@ -90,7 +90,7 @@ Recently, the astonishing performance of large language models (LLMs) in natural
 │   ├── scripts
 │   │   └── train.sh                          # training MLLM-Tool script
 │   ├── header.py
-│   ├── train_sft.py                              # training
+│   ├── train_sft.py                          # training
 │   └── inference.py                          # inference
 ├── pretrained_checkpoint                     # frozen params of pretrained modules
 │   ├── imagebind_ckpt
@@ -123,7 +123,7 @@ pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2 --ind
 git clone https://github.com/MLLM-Tool/MLLM-Tool.git
 cd MLLM-Tool
 
-pip install -r requirements.txt *
+pip install -r requirements.txt 
 
 conda install -c conda-forge cartopy
 conda install -c conda-forge pycocotools
@@ -182,8 +182,8 @@ deepspeed --include localhost:0,1,2,3 --master_addr 127.0.0.1 --master_port 2845
     --llm_ckpt_path ../pretrained_checkpoint/LLM_ckpt/vicuna_7b/\
     --max_tgt_len 512\
     --epochs 5\
-    --save_path  ../ckpt/delta_ckpt/MLLM-Tool/vicuna_7b/\
-    --log_path ../ckpt/delta_ckpt/MLLM-Tool/vicuna_7b/log/\
+    --save_path  ../ckpt/mllmtool_vicuna_7b/\
+    --log_path ../ckpt/mllmtool_vicuna_7b/log/\
     --version v1
 ```
 where the key arguments are:
