@@ -14,7 +14,7 @@ This repository hosts the code, data and model weight of **MLLM-Tool**, the firs
 ## 🎉 News 
 
 - [x] [2024.01.16] 🚀🚀 Release the code of MLLM-Tool.
-- [x] [2024.01.16] 🔨🧩 Release the Tool-MMBench dataset.
+- [x] [2024.01.16] 🔨🧩 Release the ToolMMBench dataset.
 - [x] [2024.01.16] 📢📢 Release the checkpoint of MLLM-Tool in Vicuna-7B, Vicuna-13B, Llama-7B, Llama-13B, Llama2-7B, Llama2-13B, Llama2Chat-7B, Llama2Chat-13B.
 
 ## 👉 TODO 
@@ -113,15 +113,15 @@ Recently, the astonishing performance of large language models (LLMs) in natural
 ### 2. Environment Preparation  <a href='#all_catelogue'>[Back to Top]</a>
 Please first clone the repo and install the required environment, which can be done by running the following commands:
 ```
-conda env create -n toollmm python=3.8
+conda env create -n MLLM-Tool python=3.8
 
-conda activate toollmm
+conda activate MLLM-Tool
 
 # CUDA 11.7
 pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu117
 
 git clone https://github.com/MLLM-Tool/MLLM-Tool.git
-cd toollmm
+cd MLLM-Tool
 
 pip install -r requirements.txt *
 
@@ -162,7 +162,7 @@ Please download the following datasets used for model training and testing from 
 
 After downloading the dataset, please put it under the path [data/IT_data_ins/T+X-T_data/]
     
-<span id='Train Tool_LMM'/>
+<span id='Train MLLM-Tool'/>
 
 #### 3.3. Training MLLM-Tool  <a href='#all_catelogue'>[Back to Top]</a>
 
@@ -182,8 +182,8 @@ deepspeed --include localhost:0,1,2,3 --master_addr 127.0.0.1 --master_port 2845
     --llm_ckpt_path ../pretrained_checkpoint/LLM_ckpt/vicuna_7b/\
     --max_tgt_len 512\
     --epochs 5\
-    --save_path  ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/\
-    --log_path ../ckpt/delta_ckpt/tool_lmm/vicuna_7b/log/\
+    --save_path  ../ckpt/delta_ckpt/MLLM-Tool/vicuna_7b/\
+    --log_path ../ckpt/delta_ckpt/MLLM-Tool/vicuna_7b/log/\
     --version v1
 ```
 where the key arguments are:
@@ -201,7 +201,7 @@ where the key arguments are:
 
 The whole MLLM-Tool training involves:
 
-- **Step-1**: Instruction Tuning. This stage instruction-tune 1) the ***LLM*** via LoRA, 2) ***input projection layer*** on the Tool-MMBench dataset.
+- **Step-1**: Instruction Tuning. This stage instruction-tune 1) the ***LLM*** via LoRA, 2) ***input projection layer*** on the ToolMMBench dataset.
 
   Just run the above `train.sh` script.
 
