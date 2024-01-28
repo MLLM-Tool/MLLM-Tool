@@ -1,7 +1,7 @@
 # MLLM-Tool: A Multimodal Large Language Model For Tool Agent Learning
 Chenyu Wang, [Weixin Luo](https://zachluo.github.io/), [Qianyu Chen](https://github.com/Mitcheese), [Haonan Mai](https://github.com/mai-hn), [Jindi Guo](https://github.com/1259666087), [Sixun Dong](https://ironieser.github.io/), Xiaohua (Michael) Xuan, [Zhengxin Li](https://scholar.google.com/citations?user=7wslizAAAAAJ&hl=en), [Lin Ma](https://forestlinma.com/), [Shenghua Gao](https://svip-lab.github.io/).
 
-**ShanghaiTech University && Meituan**
+**ShanghaiTech University && Meituan && UniDT**
 
 -----
 <a href='https://arxiv.org/pdf/2401.10727'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a>  
