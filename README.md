@@ -12,7 +12,7 @@ This repository hosts the code, data and model weight of **MLLM-Tool**, the firs
 -----------
 
 ## 🎉 News 
-
+- [x] [2024.02.02] 📢📢 We change the permissions for data and checkpoints, no longer need to apply to download them.
 - [x] [2024.01.16] 🚀🚀 Release the code of MLLM-Tool.
 - [x] [2024.01.16] 🔨🧩 Release the ToolMMBench dataset.
 - [x] [2024.01.16] 📢📢 Release the checkpoint of MLLM-Tool in Vicuna-7B, Vicuna-13B, Llama-7B, Llama-13B, Llama2-7B, Llama2-13B, Llama2Chat-7B, Llama2Chat-13B.
