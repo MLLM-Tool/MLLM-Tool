@@ -113,7 +113,7 @@ Recently, the astonishing performance of large language models (LLMs) in natural
 ### 2. Environment Preparation  <a href='#all_catelogue'>[Back to Top]</a>
 Please first clone the repo and install the required environment, which can be done by running the following commands:
 ```
-conda env create -n MLLM-Tool python=3.8
+conda create -n MLLM-Tool python=3.8
 
 conda activate MLLM-Tool
 
